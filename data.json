@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T10:49:30.988Z",
+  "lastUpdated": "2026-06-23T22:08:15.915Z",
   "season": 2026,
   "playerCount": 100,
   "players": [
@@ -15,7 +15,7 @@
         "disposals": 10,
         "marks": "100+",
         "tackles": 22,
-        "disposalEfficiency": 40
+        "disposalEfficiency": 45
       },
       "stats": {
         "fantasyPoints": 1578,
@@ -38,7 +38,7 @@
         "disposals": 29,
         "marks": "100+",
         "tackles": 18,
-        "disposalEfficiency": 71
+        "disposalEfficiency": 74
       },
       "stats": {
         "fantasyPoints": 1420,
@@ -61,7 +61,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 14,
-        "disposalEfficiency": 66
+        "disposalEfficiency": 69
       },
       "stats": {
         "fantasyPoints": 1096,
@@ -84,7 +84,7 @@
         "disposals": 44,
         "marks": "100+",
         "tackles": 25,
-        "disposalEfficiency": 57
+        "disposalEfficiency": 62
       },
       "stats": {
         "fantasyPoints": 1306,
@@ -107,7 +107,7 @@
         "disposals": 45,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 72
+        "disposalEfficiency": 75
       },
       "stats": {
         "fantasyPoints": 1649,
@@ -130,7 +130,7 @@
         "disposals": 48,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 55
+        "disposalEfficiency": 60
       },
       "stats": {
         "fantasyPoints": 1145,
@@ -153,7 +153,7 @@
         "disposals": 9,
         "marks": "100+",
         "tackles": 32,
-        "disposalEfficiency": 39
+        "disposalEfficiency": 44
       },
       "stats": {
         "fantasyPoints": 1451,
@@ -176,7 +176,7 @@
         "disposals": 22,
         "marks": "100+",
         "tackles": 75,
-        "disposalEfficiency": 48
+        "disposalEfficiency": 53
       },
       "stats": {
         "fantasyPoints": 1331,
@@ -199,7 +199,7 @@
         "disposals": 100,
         "marks": "100+",
         "tackles": 64,
-        "disposalEfficiency": 69
+        "disposalEfficiency": 72
       },
       "stats": {
         "fantasyPoints": 990,
@@ -222,7 +222,7 @@
         "disposals": 97,
         "marks": "100+",
         "tackles": 10,
-        "disposalEfficiency": 59
+        "disposalEfficiency": 64
       },
       "stats": {
         "fantasyPoints": 1497,
@@ -234,26 +234,26 @@
       }
     },
     {
-      "name": "Reilly O'Brien",
-      "team": "Crows",
-      "position": "RUC",
+      "name": "John Noble",
+      "team": "Suns",
+      "position": "DEF",
       "ratingRank": 101,
       "ratingPoints": 365,
       "rankings": {
-        "fantasyPoints": "100+",
+        "fantasyPoints": 17,
         "goals": "100+",
-        "disposals": "100+",
-        "marks": "100+",
+        "disposals": 18,
+        "marks": 17,
         "tackles": "100+",
-        "disposalEfficiency": "100+"
+        "disposalEfficiency": 7
       },
       "stats": {
-        "fantasyPoints": 31,
-        "goals": 0,
-        "disposals": 3,
-        "marks": 1,
-        "tackles": 1,
-        "disposalEfficiency": null
+        "fantasyPoints": 1415,
+        "goals": 7,
+        "disposals": 377,
+        "marks": 95,
+        "tackles": 24,
+        "disposalEfficiency": 83.8
       }
     },
     {
@@ -268,7 +268,7 @@
         "disposals": 1,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 70
+        "disposalEfficiency": 73
       },
       "stats": {
         "fantasyPoints": 1583,
@@ -291,7 +291,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 42,
-        "disposalEfficiency": 54
+        "disposalEfficiency": 59
       },
       "stats": {
         "fantasyPoints": 810,
@@ -314,7 +314,7 @@
         "disposals": 2,
         "marks": "100+",
         "tackles": 14,
-        "disposalEfficiency": 65
+        "disposalEfficiency": 68
       },
       "stats": {
         "fantasyPoints": 1661,
@@ -337,7 +337,7 @@
         "disposals": 4,
         "marks": 63,
         "tackles": 55,
-        "disposalEfficiency": 24
+        "disposalEfficiency": 31
       },
       "stats": {
         "fantasyPoints": 1551,
@@ -360,7 +360,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 44,
-        "disposalEfficiency": 76
+        "disposalEfficiency": 79
       },
       "stats": {
         "fantasyPoints": 1354,
@@ -383,7 +383,7 @@
         "disposals": 39,
         "marks": "100+",
         "tackles": 12,
-        "disposalEfficiency": 83
+        "disposalEfficiency": 86
       },
       "stats": {
         "fantasyPoints": 1437,
@@ -406,7 +406,7 @@
         "disposals": 94,
         "marks": "100+",
         "tackles": 25,
-        "disposalEfficiency": 56
+        "disposalEfficiency": 61
       },
       "stats": {
         "fantasyPoints": 1269,
@@ -429,7 +429,7 @@
         "disposals": 59,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 42
+        "disposalEfficiency": 47
       },
       "stats": {
         "fantasyPoints": 1121,
@@ -452,7 +452,7 @@
         "disposals": 54,
         "marks": "100+",
         "tackles": 79,
-        "disposalEfficiency": 85
+        "disposalEfficiency": 88
       },
       "stats": {
         "fantasyPoints": 1199,
@@ -475,7 +475,7 @@
         "disposals": 12,
         "marks": "100+",
         "tackles": 37,
-        "disposalEfficiency": 44
+        "disposalEfficiency": 49
       },
       "stats": {
         "fantasyPoints": 1356,
@@ -498,7 +498,7 @@
         "disposals": 6,
         "marks": 63,
         "tackles": "100+",
-        "disposalEfficiency": 21
+        "disposalEfficiency": 28
       },
       "stats": {
         "fantasyPoints": 1448,
@@ -521,7 +521,7 @@
         "disposals": 24,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 18
+        "disposalEfficiency": 25
       },
       "stats": {
         "fantasyPoints": 1201,
@@ -544,7 +544,7 @@
         "disposals": 32,
         "marks": "100+",
         "tackles": 48,
-        "disposalEfficiency": 19
+        "disposalEfficiency": 26
       },
       "stats": {
         "fantasyPoints": 1227,
@@ -556,26 +556,26 @@
       }
     },
     {
-      "name": "Tom Liberatore",
-      "team": "Bulldogs",
+      "name": "Archie Roberts",
+      "team": "Bombers",
       "position": "MID",
-      "ratingRank": 25,
-      "ratingPoints": 499.6,
+      "ratingRank": 102,
+      "ratingPoints": 364,
       "rankings": {
-        "fantasyPoints": "100+",
+        "fantasyPoints": 15,
         "goals": "100+",
-        "disposals": "100+",
-        "marks": "100+",
+        "disposals": 7,
+        "marks": 31,
         "tackles": "100+",
-        "disposalEfficiency": "100+"
+        "disposalEfficiency": 20
       },
       "stats": {
-        "fantasyPoints": 468,
+        "fantasyPoints": 1424,
         "goals": 1,
-        "disposals": 121,
-        "marks": 18,
-        "tackles": 27,
-        "disposalEfficiency": null
+        "disposals": 422,
+        "marks": 87,
+        "tackles": 16,
+        "disposalEfficiency": 79.1
       }
     },
     {
@@ -590,7 +590,7 @@
         "disposals": 31,
         "marks": "100+",
         "tackles": 18,
-        "disposalEfficiency": 16
+        "disposalEfficiency": 20
       },
       "stats": {
         "fantasyPoints": 1273,
@@ -613,7 +613,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 82
+        "disposalEfficiency": 85
       },
       "stats": {
         "fantasyPoints": 630,
@@ -659,7 +659,7 @@
         "disposals": 35,
         "marks": "100+",
         "tackles": 6,
-        "disposalEfficiency": 21
+        "disposalEfficiency": 28
       },
       "stats": {
         "fantasyPoints": 1306,
@@ -682,7 +682,7 @@
         "disposals": 11,
         "marks": 19,
         "tackles": "100+",
-        "disposalEfficiency": 4
+        "disposalEfficiency": 6
       },
       "stats": {
         "fantasyPoints": 1486,
@@ -705,7 +705,7 @@
         "disposals": 14,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 13
+        "disposalEfficiency": 17
       },
       "stats": {
         "fantasyPoints": 1368,
@@ -728,7 +728,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 73
+        "disposalEfficiency": 76
       },
       "stats": {
         "fantasyPoints": 1085,
@@ -751,7 +751,7 @@
         "disposals": 21,
         "marks": "100+",
         "tackles": 40,
-        "disposalEfficiency": 23
+        "disposalEfficiency": 30
       },
       "stats": {
         "fantasyPoints": 1259,
@@ -774,7 +774,7 @@
         "disposals": 55,
         "marks": 60,
         "tackles": 32,
-        "disposalEfficiency": 32
+        "disposalEfficiency": 38
       },
       "stats": {
         "fantasyPoints": 1253,
@@ -797,7 +797,7 @@
         "disposals": 22,
         "marks": "100+",
         "tackles": 18,
-        "disposalEfficiency": 66
+        "disposalEfficiency": 69
       },
       "stats": {
         "fantasyPoints": 1237,
@@ -820,7 +820,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 71,
-        "disposalEfficiency": 6
+        "disposalEfficiency": 10
       },
       "stats": {
         "fantasyPoints": 871,
@@ -843,7 +843,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 59,
-        "disposalEfficiency": 75
+        "disposalEfficiency": 78
       },
       "stats": {
         "fantasyPoints": 937,
@@ -866,7 +866,7 @@
         "disposals": 15,
         "marks": "100+",
         "tackles": 24,
-        "disposalEfficiency": 27
+        "disposalEfficiency": 34
       },
       "stats": {
         "fantasyPoints": 1367,
@@ -889,7 +889,7 @@
         "disposals": 63,
         "marks": "100+",
         "tackles": 62,
-        "disposalEfficiency": 20
+        "disposalEfficiency": 27
       },
       "stats": {
         "fantasyPoints": 1226,
@@ -912,7 +912,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 44,
-        "disposalEfficiency": 44
+        "disposalEfficiency": 49
       },
       "stats": {
         "fantasyPoints": 959,
@@ -935,7 +935,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 79
+        "disposalEfficiency": 82
       },
       "stats": {
         "fantasyPoints": 829,
@@ -958,7 +958,7 @@
         "disposals": 92,
         "marks": "100+",
         "tackles": 2,
-        "disposalEfficiency": 49
+        "disposalEfficiency": 54
       },
       "stats": {
         "fantasyPoints": 1082,
@@ -981,7 +981,7 @@
         "disposals": 85,
         "marks": "100+",
         "tackles": 37,
-        "disposalEfficiency": 62
+        "disposalEfficiency": 67
       },
       "stats": {
         "fantasyPoints": 1057,
@@ -993,26 +993,26 @@
       }
     },
     {
-      "name": "Toby Nankervis",
-      "team": "Tigers",
-      "position": "RUC",
-      "ratingRank": 44,
-      "ratingPoints": 433.6,
+      "name": "Lachie Whitfield",
+      "team": "Giants",
+      "position": "DEF",
+      "ratingRank": 103,
+      "ratingPoints": 363,
       "rankings": {
-        "fantasyPoints": "100+",
+        "fantasyPoints": 30,
         "goals": "100+",
-        "disposals": "100+",
-        "marks": "100+",
+        "disposals": 17,
+        "marks": 44,
         "tackles": "100+",
-        "disposalEfficiency": 37
+        "disposalEfficiency": 8
       },
       "stats": {
-        "fantasyPoints": 226,
+        "fantasyPoints": 1321,
         "goals": 0,
-        "disposals": 45,
-        "marks": 5,
-        "tackles": 13,
-        "disposalEfficiency": 73.3
+        "disposals": 379,
+        "marks": 81,
+        "tackles": 29,
+        "disposalEfficiency": 83.6
       }
     },
     {
@@ -1027,7 +1027,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 88
+        "disposalEfficiency": 90
       },
       "stats": {
         "fantasyPoints": 760,
@@ -1050,7 +1050,7 @@
         "disposals": 99,
         "marks": 87,
         "tackles": "100+",
-        "disposalEfficiency": 52
+        "disposalEfficiency": 57
       },
       "stats": {
         "fantasyPoints": 1157,
@@ -1073,7 +1073,7 @@
         "disposals": "100+",
         "marks": 21,
         "tackles": "100+",
-        "disposalEfficiency": 81
+        "disposalEfficiency": 84
       },
       "stats": {
         "fantasyPoints": 1155,
@@ -1119,7 +1119,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 17
+        "disposalEfficiency": 22
       },
       "stats": {
         "fantasyPoints": 702,
@@ -1142,7 +1142,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 78
+        "disposalEfficiency": 81
       },
       "stats": {
         "fantasyPoints": 1010,
@@ -1165,7 +1165,7 @@
         "disposals": 41,
         "marks": "100+",
         "tackles": 71,
-        "disposalEfficiency": 50
+        "disposalEfficiency": 55
       },
       "stats": {
         "fantasyPoints": 1178,
@@ -1211,7 +1211,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 47
+        "disposalEfficiency": 52
       },
       "stats": {
         "fantasyPoints": 957,
@@ -1257,7 +1257,7 @@
         "disposals": 18,
         "marks": "100+",
         "tackles": 51,
-        "disposalEfficiency": 60
+        "disposalEfficiency": 65
       },
       "stats": {
         "fantasyPoints": 1392,
@@ -1280,7 +1280,7 @@
         "disposals": 75,
         "marks": "100+",
         "tackles": 42,
-        "disposalEfficiency": 51
+        "disposalEfficiency": 56
       },
       "stats": {
         "fantasyPoints": 1132,
@@ -1303,7 +1303,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 96,
-        "disposalEfficiency": 86
+        "disposalEfficiency": 89
       },
       "stats": {
         "fantasyPoints": 794,
@@ -1349,7 +1349,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 25,
-        "disposalEfficiency": 32
+        "disposalEfficiency": 38
       },
       "stats": {
         "fantasyPoints": 1064,
@@ -1372,7 +1372,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 41
+        "disposalEfficiency": 46
       },
       "stats": {
         "fantasyPoints": 778,
@@ -1395,7 +1395,7 @@
         "disposals": 55,
         "marks": 83,
         "tackles": 51,
-        "disposalEfficiency": 76
+        "disposalEfficiency": 79
       },
       "stats": {
         "fantasyPoints": 1321,
@@ -1418,7 +1418,7 @@
         "disposals": 26,
         "marks": "100+",
         "tackles": 4,
-        "disposalEfficiency": 37
+        "disposalEfficiency": 43
       },
       "stats": {
         "fantasyPoints": 1384,
@@ -1441,7 +1441,7 @@
         "disposals": 45,
         "marks": 5,
         "tackles": "100+",
-        "disposalEfficiency": 12
+        "disposalEfficiency": 15
       },
       "stats": {
         "fantasyPoints": 1293,
@@ -1464,7 +1464,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 74
+        "disposalEfficiency": 77
       },
       "stats": {
         "fantasyPoints": 1032,
@@ -1487,7 +1487,7 @@
         "disposals": 87,
         "marks": "100+",
         "tackles": 8,
-        "disposalEfficiency": 58
+        "disposalEfficiency": 63
       },
       "stats": {
         "fantasyPoints": 1184,
@@ -1510,7 +1510,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 13
+        "disposalEfficiency": 17
       },
       "stats": {
         "fantasyPoints": 842,
@@ -1533,7 +1533,7 @@
         "disposals": 71,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 36
+        "disposalEfficiency": 42
       },
       "stats": {
         "fantasyPoints": 1091,
@@ -1545,26 +1545,26 @@
       }
     },
     {
-      "name": "Errol Gulden",
-      "team": "Swans",
-      "position": "FWD",
-      "ratingRank": 68,
-      "ratingPoints": 400.2,
+      "name": "Bradley Hill",
+      "team": "Saints",
+      "position": "DEF",
+      "ratingRank": 104,
+      "ratingPoints": 362,
       "rankings": {
-        "fantasyPoints": "100+",
+        "fantasyPoints": 28,
         "goals": "100+",
-        "disposals": "100+",
-        "marks": "100+",
+        "disposals": 32,
+        "marks": 21,
         "tackles": "100+",
-        "disposalEfficiency": 28
+        "disposalEfficiency": 23
       },
       "stats": {
-        "fantasyPoints": 227,
-        "goals": 1,
-        "disposals": 47,
-        "marks": 9,
-        "tackles": 19,
-        "disposalEfficiency": 74.5
+        "fantasyPoints": 1324,
+        "goals": 7,
+        "disposals": 349,
+        "marks": 93,
+        "tackles": 24,
+        "disposalEfficiency": 78.2
       }
     },
     {
@@ -1579,7 +1579,7 @@
         "disposals": "100+",
         "marks": 10,
         "tackles": "100+",
-        "disposalEfficiency": 43
+        "disposalEfficiency": 48
       },
       "stats": {
         "fantasyPoints": 1141,
@@ -1591,49 +1591,49 @@
       }
     },
     {
-      "name": "Sam Darcy",
-      "team": "Bulldogs",
-      "position": "KEYF",
-      "ratingRank": 70,
-      "ratingPoints": 395.2,
+      "name": "Jayden Short",
+      "team": "Tigers",
+      "position": "DEF",
+      "ratingRank": 105,
+      "ratingPoints": 361,
       "rankings": {
-        "fantasyPoints": "100+",
-        "goals": 87,
-        "disposals": "100+",
-        "marks": "100+",
+        "fantasyPoints": 45,
+        "goals": "100+",
+        "disposals": 45,
+        "marks": 13,
         "tackles": "100+",
-        "disposalEfficiency": 87
+        "disposalEfficiency": 16
       },
       "stats": {
-        "fantasyPoints": 381,
-        "goals": 12,
-        "disposals": 69,
-        "marks": 21,
-        "tackles": 11,
-        "disposalEfficiency": 56.5
+        "fantasyPoints": 1250,
+        "goals": 2,
+        "disposals": 324,
+        "marks": 97,
+        "tackles": 15,
+        "disposalEfficiency": 80.2
       }
     },
     {
-      "name": "Connor Rozee",
-      "team": "Power",
-      "position": "MID",
-      "ratingRank": 71,
-      "ratingPoints": 394.8,
+      "name": "Caleb Daniel",
+      "team": "Kangaroos",
+      "position": "DEF",
+      "ratingRank": 106,
+      "ratingPoints": 360,
       "rankings": {
-        "fantasyPoints": "100+",
+        "fantasyPoints": 40,
         "goals": "100+",
-        "disposals": "100+",
-        "marks": "100+",
+        "disposals": 34,
+        "marks": 48,
         "tackles": "100+",
-        "disposalEfficiency": 64
+        "disposalEfficiency": 3
       },
       "stats": {
-        "fantasyPoints": 161,
+        "fantasyPoints": 1271,
         "goals": 0,
-        "disposals": 45,
-        "marks": 9,
-        "tackles": 6,
-        "disposalEfficiency": 66.7
+        "disposals": 348,
+        "marks": 80,
+        "tackles": 33,
+        "disposalEfficiency": 85.6
       }
     },
     {
@@ -1648,7 +1648,7 @@
         "disposals": 3,
         "marks": "100+",
         "tackles": 18,
-        "disposalEfficiency": 35
+        "disposalEfficiency": 41
       },
       "stats": {
         "fantasyPoints": 1387,
@@ -1671,7 +1671,7 @@
         "disposals": 5,
         "marks": 25,
         "tackles": 32,
-        "disposalEfficiency": 28
+        "disposalEfficiency": 35
       },
       "stats": {
         "fantasyPoints": 1573,
@@ -1683,26 +1683,26 @@
       }
     },
     {
-      "name": "Darcy Moore",
-      "team": "Magpies",
-      "position": "KEYD",
-      "ratingRank": 74,
-      "ratingPoints": 387.2,
+      "name": "Jarman Impey",
+      "team": "Hawks",
+      "position": "DEF",
+      "ratingRank": 107,
+      "ratingPoints": 359,
       "rankings": {
-        "fantasyPoints": "100+",
+        "fantasyPoints": 51,
         "goals": "100+",
-        "disposals": "100+",
-        "marks": "100+",
+        "disposals": 53,
+        "marks": 7,
         "tackles": "100+",
-        "disposalEfficiency": 63
+        "disposalEfficiency": 24
       },
       "stats": {
-        "fantasyPoints": 106,
-        "goals": 0,
-        "disposals": 25,
-        "marks": 12,
-        "tackles": 3,
-        "disposalEfficiency": 68
+        "fantasyPoints": 1217,
+        "goals": 1,
+        "disposals": 315,
+        "marks": 101,
+        "tackles": 23,
+        "disposalEfficiency": 78.1
       }
     },
     {
@@ -1717,7 +1717,7 @@
         "disposals": 28,
         "marks": 14,
         "tackles": "100+",
-        "disposalEfficiency": 11
+        "disposalEfficiency": 14
       },
       "stats": {
         "fantasyPoints": 1319,
@@ -1740,7 +1740,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 79,
-        "disposalEfficiency": 68
+        "disposalEfficiency": 71
       },
       "stats": {
         "fantasyPoints": 906,
@@ -1763,7 +1763,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 9
+        "disposalEfficiency": 13
       },
       "stats": {
         "fantasyPoints": 608,
@@ -1786,7 +1786,7 @@
         "disposals": 30,
         "marks": 1,
         "tackles": "100+",
-        "disposalEfficiency": 3
+        "disposalEfficiency": 5
       },
       "stats": {
         "fantasyPoints": 1487,
@@ -1809,7 +1809,7 @@
         "disposals": 77,
         "marks": "100+",
         "tackles": 96,
-        "disposalEfficiency": 89
+        "disposalEfficiency": 91
       },
       "stats": {
         "fantasyPoints": 1171,
@@ -1855,7 +1855,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 30
+        "disposalEfficiency": 36
       },
       "stats": {
         "fantasyPoints": 965,
@@ -1901,7 +1901,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 84
+        "disposalEfficiency": 87
       },
       "stats": {
         "fantasyPoints": 699,
@@ -1970,7 +1970,7 @@
         "disposals": 20,
         "marks": 31,
         "tackles": "100+",
-        "disposalEfficiency": 15
+        "disposalEfficiency": 19
       },
       "stats": {
         "fantasyPoints": 1356,
@@ -1982,26 +1982,26 @@
       }
     },
     {
-      "name": "Adam Saad",
-      "team": "Blues",
+      "name": "Wayne Milera",
+      "team": "Crows",
       "position": "DEF",
-      "ratingRank": 87,
-      "ratingPoints": 376.6,
+      "ratingRank": 108,
+      "ratingPoints": 358,
       "rankings": {
-        "fantasyPoints": "100+",
+        "fantasyPoints": 38,
         "goals": "100+",
-        "disposals": "100+",
-        "marks": "100+",
+        "disposals": 24,
+        "marks": 68,
         "tackles": "100+",
-        "disposalEfficiency": 10
+        "disposalEfficiency": 4
       },
       "stats": {
-        "fantasyPoints": 147,
-        "goals": 0,
-        "disposals": 43,
-        "marks": 7,
-        "tackles": 4,
-        "disposalEfficiency": 81.4
+        "fantasyPoints": 1290,
+        "goals": 2,
+        "disposals": 364,
+        "marks": 76,
+        "tackles": 32,
+        "disposalEfficiency": 85.4
       }
     },
     {
@@ -2016,7 +2016,7 @@
         "disposals": 51,
         "marks": 19,
         "tackles": "100+",
-        "disposalEfficiency": 8
+        "disposalEfficiency": 12
       },
       "stats": {
         "fantasyPoints": 1232,
@@ -2039,7 +2039,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 25
+        "disposalEfficiency": 32
       },
       "stats": {
         "fantasyPoints": 752,
@@ -2085,7 +2085,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 3,
-        "disposalEfficiency": 60
+        "disposalEfficiency": 65
       },
       "stats": {
         "fantasyPoints": 989,
@@ -2108,7 +2108,7 @@
         "disposals": 52,
         "marks": "100+",
         "tackles": 64,
-        "disposalEfficiency": 30
+        "disposalEfficiency": 36
       },
       "stats": {
         "fantasyPoints": 1123,
@@ -2131,7 +2131,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 26
+        "disposalEfficiency": 33
       },
       "stats": {
         "fantasyPoints": 775,
@@ -2154,7 +2154,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 5
+        "disposalEfficiency": 9
       },
       "stats": {
         "fantasyPoints": 396,
@@ -2177,7 +2177,7 @@
         "disposals": 59,
         "marks": 91,
         "tackles": "100+",
-        "disposalEfficiency": 6
+        "disposalEfficiency": 10
       },
       "stats": {
         "fantasyPoints": 1128,
@@ -2200,7 +2200,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": 6,
-        "disposalEfficiency": 53
+        "disposalEfficiency": 58
       },
       "stats": {
         "fantasyPoints": 1149,
@@ -2246,7 +2246,7 @@
         "disposals": 65,
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 44
+        "disposalEfficiency": 49
       },
       "stats": {
         "fantasyPoints": 1100,
@@ -2269,7 +2269,7 @@
         "disposals": 92,
         "marks": "100+",
         "tackles": 28,
-        "disposalEfficiency": 34
+        "disposalEfficiency": 40
       },
       "stats": {
         "fantasyPoints": 1059,
@@ -2292,7 +2292,7 @@
         "disposals": "100+",
         "marks": "100+",
         "tackles": "100+",
-        "disposalEfficiency": 79
+        "disposalEfficiency": 82
       },
       "stats": {
         "fantasyPoints": 629,
