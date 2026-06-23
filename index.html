@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WinCharlie</title>
-<!-- AdSense: replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2870749477688098" crossorigin="anonymous"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -326,22 +325,6 @@
     font-size: 0.9rem;
   }
 
-  /* Ad Slots — hidden until ad fills */
-  .ad-banner {
-    text-align: center;
-    overflow: hidden;
-    display: none;
-  }
-
-  .ad-banner.ad-loaded {
-    display: block;
-    margin: 12px 0;
-  }
-
-  .ad-banner ins {
-    display: block;
-  }
-
   /* Respin Button */
   .respin-btn {
     display: flex;
@@ -385,28 +368,8 @@
     <p>Can you score under 150 to build the complete 2026 Brownlow Medal winner?</p>
   </header>
 
-  <!-- Top banner ad -->
-  <div class="ad-banner" id="ad-top">
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-      data-ad-slot="TOP_AD_SLOT_ID"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
-  </div>
-
   <div id="app">
     <div class="loading"><div class="spinner"></div><p>Loading player data...</p></div>
-  </div>
-
-  <!-- Bottom banner ad -->
-  <div class="ad-banner" id="ad-bottom">
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-      data-ad-slot="BOTTOM_AD_SLOT_ID"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
   </div>
 
   <div class="footer">
@@ -416,12 +379,12 @@
 
 <script>
 const CATEGORIES = [
-  { key: "fantasyPoints", label: "Fantasy Pts", icon: "⭐" },
-  { key: "goals", label: "Goals", icon: "🏈" },
-  { key: "disposals", label: "Disposals", icon: "🤾" },
-  { key: "marks", label: "Marks", icon: "🙌" },
-  { key: "tackles", label: "Tackles", icon: "💪" },
-  { key: "disposalEfficiency", label: "Disposal Eff.", icon: "🎯" },
+  { key: "fantasyPoints", label: "Fantasy Pts", icon: "‚≠ê" },
+  { key: "goals", label: "Goals", icon: "üèà" },
+  { key: "disposals", label: "Disposals", icon: "ü§æ" },
+  { key: "marks", label: "Marks", icon: "üôå" },
+  { key: "tackles", label: "Tackles", icon: "üí™" },
+  { key: "disposalEfficiency", label: "Disposal Eff.", icon: "üéØ" },
 ];
 
 const TEAM_COLORS = {
@@ -449,35 +412,14 @@ let currentGame = null;
 // --- Rewarded Ad for Respin ---
 let rewardedAdReady = false;
 
-function initAds() {
-  try {
-    const ads = window.adsbygoogle || [];
-    window.adsbygoogle = ads;
-    ads.push({
-      google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
-      enable_page_level_ads: true,
-    });
-    ads.push({});
-    ads.push({});
-    // Show banners once ads are served
-    setTimeout(() => {
-      document.querySelectorAll('.ad-banner ins').forEach(ins => {
-        if (ins.dataset.adStatus === 'filled' || ins.childElementCount > 0) {
-          ins.closest('.ad-banner')?.classList.add('ad-loaded');
-        }
-      });
-    }, 3000);
-  } catch (e) {}
-}
-
 function showRewardedAd() {
   return new Promise((resolve) => {
     // TODO: Replace with your rewarded ad implementation.
-    // Option A — Google Ad Manager rewarded ads (GPT):
+    // Option A ‚Äî Google Ad Manager rewarded ads (GPT):
     //   googletag.cmd.push(() => { ... slot.addService(...) ... });
-    // Option B — AdMob for web (beta):
+    // Option B ‚Äî AdMob for web (beta):
     //   admob.rewarded.show().then(() => resolve(true));
-    // Option C — Third-party (AdInPlay, CrazyGames, etc.)
+    // Option C ‚Äî Third-party (AdInPlay, CrazyGames, etc.)
     //
     // For now, simulate a 5-second ad countdown:
     const overlay = document.createElement('div');
@@ -511,7 +453,6 @@ async function loadData() {
   try {
     const res = await fetch("data.json");
     gameData = await res.json();
-    initAds();
     showStartScreen();
   } catch (e) {
     document.getElementById("app").innerHTML =
@@ -605,7 +546,7 @@ function doSpinReveal() {
       card.classList.add("revealing");
       const real = g.players[g.currentRound];
       nameEl.textContent = real.name;
-      metaEl.textContent = `${real.team} · ${real.position}`;
+      metaEl.textContent = `${real.team} ¬∑ ${real.position}`;
       badgeEl.innerHTML = teamBadge(real.team, 56).replace(/<div /, "<div ").replace(/style="/, 'style="');
       g.spinning = false;
       renderCategoryGrid();
@@ -614,7 +555,7 @@ function doSpinReveal() {
     }
     const rp = allPlayers[Math.floor(Math.random() * allPlayers.length)];
     nameEl.textContent = rp.name;
-    metaEl.textContent = `${rp.team} · ${rp.position}`;
+    metaEl.textContent = `${rp.team} ¬∑ ${rp.position}`;
     badgeEl.innerHTML = teamBadge(rp.team, 56);
     tick++;
     const delay = baseDelay + (tick > totalTicks - 5 ? (tick - (totalTicks - 5)) * 60 : 0);
@@ -709,7 +650,7 @@ function renderGame() {
     const chose = `${fb.chosen.icon} ${fb.chosen.label}: <span class="fb-score ${scoreClass(fb.chosenRank)}">#${fb.chosenRank}</span>`;
     let optLine = '';
     if (fb.optimal && fb.optimal.cat.key !== fb.chosen.key && fb.optimal.num < fb.chosenScore) {
-      optLine = `Best available was ${fb.optimal.cat.icon} ${fb.optimal.cat.label} — #${fb.optimal.rank}`;
+      optLine = `Best available was ${fb.optimal.cat.icon} ${fb.optimal.cat.label} ‚Äî #${fb.optimal.rank}`;
     } else if (fb.optimal && fb.optimal.cat.key === fb.chosen.key) {
       optLine = 'That was the best choice!';
     } else {
@@ -728,7 +669,7 @@ function renderGame() {
       <div class="player-card" id="player-card">
         <div id="spin-badge">${teamBadge(p.team, 56)}</div>
         <div class="player-name" id="spin-name">${g.spinning ? '???' : p.name}</div>
-        <div class="player-meta" id="spin-meta">${g.spinning ? '' : `${p.team} · ${p.position}`}</div>
+        <div class="player-meta" id="spin-meta">${g.spinning ? '' : `${p.team} ¬∑ ${p.position}`}</div>
       </div>
     </div>`;
 
@@ -745,7 +686,7 @@ function renderGame() {
     // Respin button (once per game, requires ad)
     if (!g.respinUsed) {
       html += `<button class="respin-btn" onclick="respin()" ${g.spinning ? 'disabled' : ''}>
-        <span class="respin-icon">🔄</span> Watch ad to respin player
+        <span class="respin-icon">üîÑ</span> Watch ad to respin player
       </button>`;
     } else {
       html += `<div style="text-align:center;font-size:0.75rem;color:var(--muted);margin-top:8px">Respin used</div>`;
@@ -806,7 +747,7 @@ function showStartScreen() {
       <h3>How to Play</h3>
       <ol>
         <li><strong>6 random players</strong> appear one at a time from the top 100 (by AFL Rating Points)</li>
-        <li>For each player, <strong>assign a stat category</strong> — each can only be used once</li>
+        <li>For each player, <strong>assign a stat category</strong> ‚Äî each can only be used once</li>
         <li>Your score = the player's <strong>league-wide ranking</strong> in that stat</li>
         <li>Lower is better! #1 in goals = just 1 point</li>
         <li><strong>100+</strong> = outside the top 100 for that stat (adds 100)</li>
@@ -815,7 +756,7 @@ function showStartScreen() {
     </div>
     <button class="btn-primary" onclick="startGame()">Start Game</button>
     <p style="text-align:center;color:var(--muted);margin-top:10px;font-size:0.8rem">
-      ${gameData.playerCount} players · Season ${gameData.season} · Updated ${new Date(gameData.lastUpdated).toLocaleDateString()}
+      ${gameData.playerCount} players ¬∑ Season ${gameData.season} ¬∑ Updated ${new Date(gameData.lastUpdated).toLocaleDateString()}
     </p>`;
 }
 
