@@ -214,18 +214,8 @@
   }
 
   .cat-btn .cat-icon {
-    font-size: 0.75rem;
-    font-weight: 800;
+    font-size: 1.4rem;
     flex-shrink: 0;
-    background: var(--dark);
-    color: #fff;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.5px;
   }
 
   /* Results History */
@@ -389,12 +379,12 @@
 
 <script>
 const CATEGORIES = [
-  { key: "fantasyPoints", label: "Fantasy Pts", icon: "FP" },
-  { key: "goals", label: "Goals", icon: "GL" },
-  { key: "disposals", label: "Disposals", icon: "DI" },
-  { key: "marks", label: "Marks", icon: "MK" },
-  { key: "tackles", label: "Tackles", icon: "TK" },
-  { key: "disposalEfficiency", label: "Disposal Eff.", icon: "DE" },
+  { key: "fantasyPoints", label: "Fantasy Pts", icon: "\u{2B50}" },
+  { key: "goals", label: "Goals", icon: "\u{1F3C8}" },
+  { key: "disposals", label: "Disposals", icon: "\u{1F93E}" },
+  { key: "marks", label: "Marks", icon: "\u{1F64C}" },
+  { key: "tackles", label: "Tackles", icon: "\u{1F4AA}" },
+  { key: "disposalEfficiency", label: "Disposal Eff.", icon: "\u{1F3AF}" },
 ];
 
 const TEAM_COLORS = {
@@ -425,11 +415,11 @@ let rewardedAdReady = false;
 function showRewardedAd() {
   return new Promise((resolve) => {
     // TODO: Replace with your rewarded ad implementation.
-    // Option A ‚Äî Google Ad Manager rewarded ads (GPT):
+    // Option A - Google Ad Manager rewarded ads (GPT):
     //   googletag.cmd.push(() => { ... slot.addService(...) ... });
-    // Option B ‚Äî AdMob for web (beta):
+    // Option B - AdMob for web (beta):
     //   admob.rewarded.show().then(() => resolve(true));
-    // Option C ‚Äî Third-party (AdInPlay, CrazyGames, etc.)
+    // Option C - Third-party (AdInPlay, CrazyGames, etc.)
     //
     // For now, simulate a 5-second ad countdown:
     const overlay = document.createElement('div');
@@ -657,10 +647,10 @@ function renderGame() {
   // Feedback bar (shows after a choice is made)
   if (g.feedback) {
     const fb = g.feedback;
-    const chose = `${fb.chosen.icon} ${fb.chosen.label}: <span class="fb-score ${scoreClass(fb.chosenRank)}">#${fb.chosenRank}</span>`;
+    const chose = `${fb.chosen.label}: <span class="fb-score ${scoreClass(fb.chosenRank)}">#${fb.chosenRank}</span>`;
     let optLine = '';
     if (fb.optimal && fb.optimal.cat.key !== fb.chosen.key && fb.optimal.num < fb.chosenScore) {
-      optLine = `Best available was ${fb.optimal.cat.icon} ${fb.optimal.cat.label} ‚Äî #${fb.optimal.rank}`;
+      optLine = `Best available was ${fb.optimal.cat.label} - #${fb.optimal.rank}`;
     } else if (fb.optimal && fb.optimal.cat.key === fb.chosen.key) {
       optLine = 'That was the best choice!';
     } else {
@@ -696,7 +686,7 @@ function renderGame() {
     // Respin button (once per game, requires ad)
     if (!g.respinUsed) {
       html += `<button class="respin-btn" onclick="respin()" ${g.spinning ? 'disabled' : ''}>
-        <span class="respin-icon">&orarr;</span> Watch ad to respin player
+        <span class="respin-icon">\u{1F504}</span> Watch ad to respin player
       </button>`;
     } else {
       html += `<div style="text-align:center;font-size:0.75rem;color:var(--muted);margin-top:8px">Respin used</div>`;
@@ -713,7 +703,7 @@ function renderGame() {
           ${teamBadge(s.team, 24)}
           <div>
             <div class="rr-name">${s.playerName}</div>
-            <div class="rr-cat">${cat.icon} ${cat.label}</div>
+            <div class="rr-cat">${cat.label}</div>
           </div>
         </div>
         <div class="rr-score ${scoreClass(s.rank)}">#${s.rank}</div>
@@ -757,7 +747,7 @@ function showStartScreen() {
       <h3>How to Play</h3>
       <ol>
         <li><strong>6 random players</strong> appear one at a time from the top 100 (by AFL Rating Points)</li>
-        <li>For each player, <strong>assign a stat category</strong> ‚Äî each can only be used once</li>
+        <li>For each player, <strong>assign a stat category</strong> - each can only be used once</li>
         <li>Your score = the player's <strong>league-wide ranking</strong> in that stat</li>
         <li>Lower is better! #1 in goals = just 1 point</li>
         <li><strong>100+</strong> = outside the top 100 for that stat (adds 100)</li>
