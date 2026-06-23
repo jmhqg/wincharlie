@@ -214,8 +214,18 @@
   }
 
   .cat-btn .cat-icon {
-    font-size: 1.4rem;
+    font-size: 0.75rem;
+    font-weight: 800;
     flex-shrink: 0;
+    background: var(--dark);
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
   }
 
   /* Results History */
@@ -373,18 +383,18 @@
   </div>
 
   <div class="footer">
-    Data from <a href="https://www.footywire.com" target="_blank">footywire.com</a> &middot; Updated weekly
+    Data from <a href="https://www.footywire.com" target="_blank">footywire.com</a> - Updated weekly
   </div>
 </div>
 
 <script>
 const CATEGORIES = [
-  { key: "fantasyPoints", label: "Fantasy Pts", icon: "‚≠ê" },
-  { key: "goals", label: "Goals", icon: "üèà" },
-  { key: "disposals", label: "Disposals", icon: "ü§æ" },
-  { key: "marks", label: "Marks", icon: "üôå" },
-  { key: "tackles", label: "Tackles", icon: "üí™" },
-  { key: "disposalEfficiency", label: "Disposal Eff.", icon: "üéØ" },
+  { key: "fantasyPoints", label: "Fantasy Pts", icon: "FP" },
+  { key: "goals", label: "Goals", icon: "GL" },
+  { key: "disposals", label: "Disposals", icon: "DI" },
+  { key: "marks", label: "Marks", icon: "MK" },
+  { key: "tackles", label: "Tackles", icon: "TK" },
+  { key: "disposalEfficiency", label: "Disposal Eff.", icon: "DE" },
 ];
 
 const TEAM_COLORS = {
@@ -546,7 +556,7 @@ function doSpinReveal() {
       card.classList.add("revealing");
       const real = g.players[g.currentRound];
       nameEl.textContent = real.name;
-      metaEl.textContent = `${real.team} ¬∑ ${real.position}`;
+      metaEl.textContent = `${real.team} - ${real.position}`;
       badgeEl.innerHTML = teamBadge(real.team, 56).replace(/<div /, "<div ").replace(/style="/, 'style="');
       g.spinning = false;
       renderCategoryGrid();
@@ -555,7 +565,7 @@ function doSpinReveal() {
     }
     const rp = allPlayers[Math.floor(Math.random() * allPlayers.length)];
     nameEl.textContent = rp.name;
-    metaEl.textContent = `${rp.team} ¬∑ ${rp.position}`;
+    metaEl.textContent = `${rp.team} - ${rp.position}`;
     badgeEl.innerHTML = teamBadge(rp.team, 56);
     tick++;
     const delay = baseDelay + (tick > totalTicks - 5 ? (tick - (totalTicks - 5)) * 60 : 0);
@@ -669,7 +679,7 @@ function renderGame() {
       <div class="player-card" id="player-card">
         <div id="spin-badge">${teamBadge(p.team, 56)}</div>
         <div class="player-name" id="spin-name">${g.spinning ? '???' : p.name}</div>
-        <div class="player-meta" id="spin-meta">${g.spinning ? '' : `${p.team} ¬∑ ${p.position}`}</div>
+        <div class="player-meta" id="spin-meta">${g.spinning ? '' : `${p.team} - ${p.position}`}</div>
       </div>
     </div>`;
 
@@ -686,7 +696,7 @@ function renderGame() {
     // Respin button (once per game, requires ad)
     if (!g.respinUsed) {
       html += `<button class="respin-btn" onclick="respin()" ${g.spinning ? 'disabled' : ''}>
-        <span class="respin-icon">üîÑ</span> Watch ad to respin player
+        <span class="respin-icon">&orarr;</span> Watch ad to respin player
       </button>`;
     } else {
       html += `<div style="text-align:center;font-size:0.75rem;color:var(--muted);margin-top:8px">Respin used</div>`;
@@ -756,7 +766,7 @@ function showStartScreen() {
     </div>
     <button class="btn-primary" onclick="startGame()">Start Game</button>
     <p style="text-align:center;color:var(--muted);margin-top:10px;font-size:0.8rem">
-      ${gameData.playerCount} players ¬∑ Season ${gameData.season} ¬∑ Updated ${new Date(gameData.lastUpdated).toLocaleDateString()}
+      ${gameData.playerCount} players - Season ${gameData.season} - Updated ${new Date(gameData.lastUpdated).toLocaleDateString()}
     </p>`;
 }
 
