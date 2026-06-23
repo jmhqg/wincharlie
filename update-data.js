@@ -10,7 +10,7 @@ const BASE = "https://www.footywire.com/afl/footy";
 const YEAR = new Date().getFullYear();
 const DELAY_MS = 600;
 
-// Top 100 by AFL Player Rating Points — update this list when the pool changes
+// Top 100 by AFL Player Rating Points ‚Äî update this list when the pool changes
 // Format: [name, position, ratingRank, ratingPoints]
 const POOL_RAW = [
   ["Marcus Bontempelli", "MID", 1, 680.7],
@@ -23,7 +23,7 @@ const POOL_RAW = [
   ["Noah Anderson", "MID", 8, 569.4],
   ["Caleb Serong", "MID", 9, 567.7],
   ["Luke Jackson", "RUC", 10, 561.8],
-  ["Reilly O'Brien", "RUC", 101, 365.0],
+  ["John Noble", "DEF", 101, 365.0],
   ["Nick Daicos", "MID", 12, 549.1],
   ["Matt Rowell", "MID", 13, 543.0],
   ["Bailey Smith", "MID", 14, 539.9],
@@ -37,7 +37,7 @@ const POOL_RAW = [
   ["Lachie Neale", "MID", 22, 506.0],
   ["Nick Blakey", "DEF", 23, 503.7],
   ["Touk Miller", "FWD", 24, 502.1],
-  ["Tom Liberatore", "MID", 25, 499.6],
+  ["Archie Roberts", "MID", 102, 364.0],
   ["Luke Davies-Uniacke", "MID", 26, 498.7],
   ["Hugh McCluggage", "MID", 27, 493.2],
   ["Zach Merrett", "MID", 28, 491.1],
@@ -56,7 +56,7 @@ const POOL_RAW = [
   ["Riley Thilthorpe", "KEYF", 41, 436.8],
   ["Tom Atkins", "MID", 42, 436.4],
   ["Tim Taranto", "MID", 43, 435.3],
-  ["Toby Nankervis", "RUC", 44, 433.6],
+  ["Lachie Whitfield", "DEF", 103, 363.0],
   ["Jarrod Witts", "RUC", 45, 432.7],
   ["Zac Bailey", "FWD", 46, 432.5],
   ["Jeremy Cameron", "KEYF", 47, 431.7],
@@ -80,13 +80,13 @@ const POOL_RAW = [
   ["Josh Dunkley", "MID", 65, 409.9],
   ["Scott Pendlebury", "MID", 66, 405.4],
   ["Jy Simpkin", "MID", 67, 401.5],
-  ["Errol Gulden", "FWD", 68, 400.2],
+  ["Bradley Hill", "DEF", 104, 362.0],
   ["Josh Treacy", "KEYF", 69, 397.9],
-  ["Sam Darcy", "KEYF", 70, 395.2],
-  ["Connor Rozee", "MID", 71, 394.8],
+  ["Jayden Short", "DEF", 105, 361.0],
+  ["Caleb Daniel", "DEF", 106, 360.0],
   ["Clayton Oliver", "MID", 72, 391.5],
   ["Harry Sheezel", "MID", 73, 388.1],
-  ["Darcy Moore", "KEYD", 74, 387.2],
+  ["Jarman Impey", "DEF", 107, 359.0],
   ["Luke Parker", "DEF", 75, 387.1],
   ["Lloyd Meek", "RUC", 76, 385.8],
   ["Trent Rivers", "DEF", 77, 384.8],
@@ -99,7 +99,7 @@ const POOL_RAW = [
   ["Oliver Dempsey", "MID", 84, 381.2],
   ["Bodhi Uwland", "DEF", 85, 379.4],
   ["Josh Daicos", "DEF", 86, 377.7],
-  ["Adam Saad", "DEF", 87, 376.6],
+  ["Wayne Milera", "DEF", 108, 358.0],
   ["Dan Houston", "DEF", 88, 375.9],
   ["Steele Sidebottom", "MID", 89, 375.3],
   ["Cam Rayner", "FWD", 90, 374.5],
@@ -120,14 +120,12 @@ const SLUG_ALIASES = {
   "zach-merrett": "zachary-merrett",
   "lachie-ash": "lachlan-ash",
   "cam-rayner": "cameron-rayner",
-  "tom-liberatore": "thomas-liberatore",
   "tim-english": "timothy-english",
   "matthew-kennedy": "matthew-kennedy-1",
   "jack-macrae": "jackson-macrae",
   "sam-collins": "samuel-collins",
   "oliver-dempsey": "ollie-dempsey",
   "josh-weddle": "joshua-weddle",
-  "reilly-obrien": "reilly-o-brien",
 };
 
 function sleep(ms) {
@@ -530,7 +528,7 @@ async function main() {
   console.log(`\nDone! Wrote data.json with ${gameData.length} players`);
 
   const sample = gameData[0];
-  console.log(`\nSample — ${sample.name} (${sample.team}):`);
+  console.log(`\nSample ‚Äî ${sample.name} (${sample.team}):`);
   Object.entries(sample.rankings).forEach(([k, v]) => {
     console.log(`  ${k}: #${v} (${sample.stats[k]})`);
   });
