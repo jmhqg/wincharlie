@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WinCharlie</title>
+<!-- AdSense: replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f5f5f7;
+    --surface: #ffffff;
+    --border: #e0e0e0;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --accent: #6c5ce7;
+    --accent-light: #a29bfe;
+    --green: #00b894;
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --gold: #f1c40f;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px 0 12px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent);
+  }
+
+  header p {
+    color: var(--muted);
+    margin-top: 4px;
+    font-size: 0.85rem;
+  }
+
+  /* Score Bar */
+  .score-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: var(--surface);
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 16px;
+  }
+
+  .score-section { text-align: center; }
+  .score-label { font-size: 0.7rem; text-transform: uppercase; color: var(--muted); letter-spacing: 0.5px; }
+  .score-value { font-size: 1.6rem; font-weight: 800; }
+  .score-value.good { color: var(--green); }
+  .score-value.ok { color: var(--orange); }
+  .score-value.bad { color: var(--red); }
+
+  .progress-dots { display: flex; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
+  .dot.done { background: var(--green); }
+  .dot.active { background: var(--accent); box-shadow: 0 0 6px var(--accent-light); }
+
+  /* Player Card */
+  .player-card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .player-card {
+    background: var(--surface);
+    border-radius: 18px;
+    padding: 20px 32px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 3px solid var(--green);
+    min-width: 300px;
+    position: relative;
+  }
+
+  .player-card .team-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  .player-card .player-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .player-card .player-meta {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 3px;
+  }
+
+  /* Spin Animation */
+  .player-card.spinning .player-name {
+    animation: spinText 0.08s steps(1) infinite;
+  }
+
+  .player-card.revealing {
+    animation: revealBounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  @keyframes revealBounce {
+    0% { transform: scale(0.85); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* Feedback Bar */
+  .feedback-bar {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    animation: fadeSlideIn 0.3s ease;
+  }
+
+  .feedback-bar .fb-choice {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+
+  .feedback-bar .fb-optimal {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .feedback-bar .fb-score {
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  .fb-score.good { color: var(--green); }
+  .fb-score.ok { color: var(--orange); }
+  .fb-score.bad { color: var(--red); }
+
+  @keyframes fadeSlideIn {
+    0% { opacity: 0; transform: translateY(-8px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Category Grid */
+  .category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .cat-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 14px;
+    border: 2px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    transition: all 0.15s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  }
+
+  .cat-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.15);
+    transform: translateY(-1px);
+  }
+
+  .cat-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .cat-btn .cat-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  /* Results History */
+  .results-history {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .result-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: var(--surface);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    animation: fadeSlideIn 0.3s ease;
+  }
+
+  .result-row .rr-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-row .rr-team-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.55rem;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  .result-row .rr-name { font-weight: 600; }
+  .result-row .rr-cat { color: var(--muted); font-size: 0.75rem; }
+  .result-row .rr-score { font-weight: 800; font-size: 0.95rem; }
+  .result-row .rr-score.good { color: var(--green); }
+  .result-row .rr-score.ok { color: var(--orange); }
+  .result-row .rr-score.bad { color: var(--red); }
+
+  /* Final Screen */
+  .final-screen {
+    text-align: center;
+    padding: 32px 20px;
+    background: var(--surface);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-top: 16px;
+  }
+
+  .final-screen h2 { font-size: 1.4rem; }
+  .final-screen .final-score { font-size: 3.5rem; font-weight: 900; margin: 12px 0; }
+
+  .btn-primary {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 24px auto 0;
+    padding: 16px;
+    border-radius: 14px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(108, 92, 231, 0.3);
+  }
+
+  /* How to Play */
+  .how-to-play {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .how-to-play h3 { color: var(--accent); margin-bottom: 10px; font-size: 0.95rem; }
+  .how-to-play ol { padding-left: 18px; color: var(--muted); font-size: 0.85rem; line-height: 1.7; }
+  .how-to-play strong { color: var(--text); }
+
+  .loading { text-align: center; padding: 60px 20px; color: var(--muted); }
+  .spinner { width: 36px; height: 36px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .footer { text-align: center; padding: 20px 0; color: var(--muted); font-size: 0.75rem; }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  .waiting-label {
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  /* Ad Slots — hidden until ad fills */
+  .ad-banner {
+    text-align: center;
+    overflow: hidden;
+    display: none;
+  }
+
+  .ad-banner.ad-loaded {
+    display: block;
+    margin: 12px 0;
+  }
+
+  .ad-banner ins {
+    display: block;
+  }
+
+  /* Respin Button */
+  .respin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px dashed var(--accent-light);
+    background: transparent;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .respin-btn:hover {
+    background: rgba(108, 92, 231, 0.06);
+    border-color: var(--accent);
+  }
+
+  .respin-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    border-color: var(--border);
+    color: var(--muted);
+  }
+
+  .respin-btn .respin-icon {
+    font-size: 1rem;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>WinCharlie</h1>
+    <p>Can you score under 150 to build the complete 2026 Brownlow Medal winner?</p>
+  </header>
+
+  <!-- Top banner ad -->
+  <div class="ad-banner" id="ad-top">
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="TOP_AD_SLOT_ID"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  </div>
+
+  <div id="app">
+    <div class="loading"><div class="spinner"></div><p>Loading player data...</p></div>
+  </div>
+
+  <!-- Bottom banner ad -->
+  <div class="ad-banner" id="ad-bottom">
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="BOTTOM_AD_SLOT_ID"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  </div>
+
+  <div class="footer">
+    Data from <a href="https://www.footywire.com" target="_blank">footywire.com</a> &middot; Updated weekly
+  </div>
+</div>
+
+<script>
+const CATEGORIES = [
+  { key: "fantasyPoints", label: "Fantasy Pts", icon: "⭐" },
+  { key: "goals", label: "Goals", icon: "🏈" },
+  { key: "disposals", label: "Disposals", icon: "🤾" },
+  { key: "marks", label: "Marks", icon: "🙌" },
+  { key: "tackles", label: "Tackles", icon: "💪" },
+  { key: "disposalEfficiency", label: "Disposal Eff.", icon: "🎯" },
+];
+
+const TEAM_COLORS = {
+  "Bulldogs": "#003DB1", "Magpies": "#000000", "Cats": "#002B5C",
+  "Swans": "#ED171F", "Demons": "#CC2031", "Saints": "#ED1B2F",
+  "Power": "#008AAB", "Suns": "#E32119", "Dockers": "#3C1053",
+  "Giants": "#F47920", "Kangaroos": "#003DB1", "Lions": "#A30046",
+  "Bombers": "#CC2031", "Hawks": "#4D2004", "Blues": "#0E1E2D",
+  "Tigers": "#FFC72C", "Crows": "#002B5C", "Eagles": "#002B5C",
+};
+
+const TEAM_ABBR = {
+  "Bulldogs": "WB", "Magpies": "COL", "Cats": "GEE",
+  "Swans": "SYD", "Demons": "MEL", "Saints": "STK",
+  "Power": "PA", "Suns": "GCS", "Dockers": "FRE",
+  "Giants": "GWS", "Kangaroos": "NM", "Lions": "BRI",
+  "Bombers": "ESS", "Hawks": "HAW", "Blues": "CAR",
+  "Tigers": "RIC", "Crows": "ADE", "Eagles": "WCE",
+};
+
+const NUM_ROUNDS = 6;
+let gameData = null;
+let currentGame = null;
+
+// --- Rewarded Ad for Respin ---
+let rewardedAdReady = false;
+
+function initAds() {
+  try {
+    const ads = window.adsbygoogle || [];
+    window.adsbygoogle = ads;
+    ads.push({
+      google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+      enable_page_level_ads: true,
+    });
+    ads.push({});
+    ads.push({});
+    // Show banners once ads are served
+    setTimeout(() => {
+      document.querySelectorAll('.ad-banner ins').forEach(ins => {
+        if (ins.dataset.adStatus === 'filled' || ins.childElementCount > 0) {
+          ins.closest('.ad-banner')?.classList.add('ad-loaded');
+        }
+      });
+    }, 3000);
+  } catch (e) {}
+}
+
+function showRewardedAd() {
+  return new Promise((resolve) => {
+    // TODO: Replace with your rewarded ad implementation.
+    // Option A — Google Ad Manager rewarded ads (GPT):
+    //   googletag.cmd.push(() => { ... slot.addService(...) ... });
+    // Option B — AdMob for web (beta):
+    //   admob.rewarded.show().then(() => resolve(true));
+    // Option C — Third-party (AdInPlay, CrazyGames, etc.)
+    //
+    // For now, simulate a 5-second ad countdown:
+    const overlay = document.createElement('div');
+    overlay.id = 'ad-overlay';
+    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;color:#fff;font-family:inherit';
+    overlay.innerHTML = `
+      <div style="font-size:0.8rem;color:#aaa;margin-bottom:12px">ADVERTISEMENT</div>
+      <div style="width:300px;height:250px;background:#222;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#555;font-size:0.9rem;margin-bottom:20px">
+        Your rewarded ad here
+      </div>
+      <div id="ad-countdown" style="font-size:1.2rem;font-weight:700">5</div>
+      <div style="font-size:0.75rem;color:#888;margin-top:6px">Respin unlocks when ad finishes</div>
+    `;
+    document.body.appendChild(overlay);
+
+    let seconds = 5;
+    const countdownEl = overlay.querySelector('#ad-countdown');
+    const timer = setInterval(() => {
+      seconds--;
+      countdownEl.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(timer);
+        overlay.remove();
+        resolve(true);
+      }
+    }, 1000);
+  });
+}
+
+async function loadData() {
+  try {
+    const res = await fetch("data.json");
+    gameData = await res.json();
+    initAds();
+    showStartScreen();
+  } catch (e) {
+    document.getElementById("app").innerHTML =
+      '<div class="loading"><p style="color:var(--red)">Failed to load data.json</p><p style="margin-top:8px;color:var(--muted)">Run: node update-data.js</p></div>';
+  }
+}
+
+function pickRandom(arr, n) {
+  const pool = [...arr];
+  const out = [];
+  while (out.length < n && pool.length) {
+    out.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+  }
+  return out;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function scoreClass(s) {
+  if (typeof s === "string") return "bad";
+  return s <= 10 ? "good" : s <= 40 ? "ok" : "bad";
+}
+
+function scoreNum(s) { return typeof s === "number" ? s : 100; }
+
+function teamBadge(team, size) {
+  const bg = TEAM_COLORS[team] || "#888";
+  const abbr = TEAM_ABBR[team] || team.substring(0, 3).toUpperCase();
+  const sz = size || 56;
+  const fs = sz < 30 ? 0.55 : 0.85;
+  const br = sz < 30 ? 6 : 14;
+  return `<div style="width:${sz}px;height:${sz}px;border-radius:${br}px;background:${bg};display:flex;align-items:center;justify-content:center;font-weight:800;font-size:${fs}rem;color:#fff;letter-spacing:0.5px;box-shadow:0 2px 6px rgba(0,0,0,0.15);flex-shrink:0">${abbr}</div>`;
+}
+
+function bestAvailable(player, usedKeys) {
+  let best = null;
+  let bestScore = Infinity;
+  for (const cat of CATEGORIES) {
+    if (usedKeys.has(cat.key)) continue;
+    const rank = player.rankings[cat.key];
+    const num = scoreNum(rank);
+    if (num < bestScore) {
+      bestScore = num;
+      best = { cat, rank, num };
+    }
+  }
+  return best;
+}
+
+function startGame() {
+  const players = pickRandom(gameData.players, NUM_ROUNDS);
+  currentGame = {
+    players,
+    categories: shuffle([...CATEGORIES]),
+    assignments: [],
+    scores: [],
+    feedback: null,
+    currentRound: 0,
+    finished: false,
+    spinning: true,
+    respinUsed: false,
+  };
+  renderGame();
+  doSpinReveal();
+}
+
+function doSpinReveal() {
+  const g = currentGame;
+  const card = document.getElementById("player-card");
+  const nameEl = document.getElementById("spin-name");
+  const metaEl = document.getElementById("spin-meta");
+  const badgeEl = document.getElementById("spin-badge");
+  if (!card || !nameEl) return;
+
+  card.classList.add("spinning");
+  const allPlayers = gameData.players;
+  let tick = 0;
+  const totalTicks = 18;
+  const baseDelay = 40;
+
+  function spinTick() {
+    if (tick >= totalTicks) {
+      card.classList.remove("spinning");
+      card.classList.add("revealing");
+      const real = g.players[g.currentRound];
+      nameEl.textContent = real.name;
+      metaEl.textContent = `${real.team} · ${real.position}`;
+      badgeEl.innerHTML = teamBadge(real.team, 56).replace(/<div /, "<div ").replace(/style="/, 'style="');
+      g.spinning = false;
+      renderCategoryGrid();
+      setTimeout(() => card.classList.remove("revealing"), 500);
+      return;
+    }
+    const rp = allPlayers[Math.floor(Math.random() * allPlayers.length)];
+    nameEl.textContent = rp.name;
+    metaEl.textContent = `${rp.team} · ${rp.position}`;
+    badgeEl.innerHTML = teamBadge(rp.team, 56);
+    tick++;
+    const delay = baseDelay + (tick > totalTicks - 5 ? (tick - (totalTicks - 5)) * 60 : 0);
+    setTimeout(spinTick, delay);
+  }
+  spinTick();
+}
+
+function assignCategory(catKey) {
+  const g = currentGame;
+  if (g.spinning || g.finished) return;
+  if (g.assignments.some(a => a.key === catKey)) return;
+
+  const player = g.players[g.currentRound];
+  const cat = CATEGORIES.find(c => c.key === catKey);
+  const rank = player.rankings[catKey];
+  const score = scoreNum(rank);
+
+  const usedBefore = new Set(g.assignments.map(a => a.key));
+  const optimal = bestAvailable(player, usedBefore);
+
+  g.assignments.push(cat);
+  g.scores.push({ rank, score, playerName: player.name, team: player.team });
+
+  g.feedback = {
+    playerName: player.name,
+    chosen: cat,
+    chosenRank: rank,
+    chosenScore: score,
+    optimal: optimal,
+  };
+
+  g.currentRound++;
+  if (g.currentRound >= NUM_ROUNDS) {
+    g.finished = true;
+  }
+
+  renderGame();
+
+  if (!g.finished) {
+    g.spinning = true;
+    setTimeout(doSpinReveal, 800);
+  }
+}
+
+async function respin() {
+  const g = currentGame;
+  if (!g || g.spinning || g.finished || g.respinUsed) return;
+
+  const adWatched = await showRewardedAd();
+  if (!adWatched) return;
+
+  g.respinUsed = true;
+
+  const usedNames = new Set(g.players.map(p => p.name));
+  const available = gameData.players.filter(p => !usedNames.has(p.name));
+  if (available.length === 0) return;
+
+  const newPlayer = available[Math.floor(Math.random() * available.length)];
+  g.players[g.currentRound] = newPlayer;
+  g.feedback = null;
+  g.spinning = true;
+  renderGame();
+  doSpinReveal();
+}
+
+function renderGame() {
+  const g = currentGame;
+  const total = g.scores.reduce((s, v) => s + v.score, 0);
+  const usedKeys = new Set(g.assignments.map(a => a.key));
+
+  let html = '';
+
+  // Score bar
+  html += `<div class="score-bar">
+    <div class="score-section">
+      <div class="score-label">Score</div>
+      <div class="score-value ${total < 75 ? 'good' : total < 150 ? 'ok' : 'bad'}">${total}</div>
+    </div>
+    <div class="progress-dots">
+      ${g.players.map((_, i) => `<div class="dot ${i < g.currentRound ? 'done' : ''} ${i === g.currentRound && !g.finished ? 'active' : ''}"></div>`).join('')}
+    </div>
+    <div class="score-section">
+      <div class="score-label">Target</div>
+      <div class="score-value" style="color:var(--accent)">&lt;150</div>
+    </div>
+  </div>`;
+
+  // Feedback bar (shows after a choice is made)
+  if (g.feedback) {
+    const fb = g.feedback;
+    const chose = `${fb.chosen.icon} ${fb.chosen.label}: <span class="fb-score ${scoreClass(fb.chosenRank)}">#${fb.chosenRank}</span>`;
+    let optLine = '';
+    if (fb.optimal && fb.optimal.cat.key !== fb.chosen.key && fb.optimal.num < fb.chosenScore) {
+      optLine = `Best available was ${fb.optimal.cat.icon} ${fb.optimal.cat.label} — #${fb.optimal.rank}`;
+    } else if (fb.optimal && fb.optimal.cat.key === fb.chosen.key) {
+      optLine = 'That was the best choice!';
+    } else {
+      optLine = '';
+    }
+    html += `<div class="feedback-bar">
+      <div class="fb-choice">${fb.playerName}: ${chose}</div>
+      ${optLine ? `<div class="fb-optimal">${optLine}</div>` : ''}
+    </div>`;
+  }
+
+  // Player card (if not finished)
+  if (!g.finished) {
+    const p = g.players[g.currentRound];
+    html += `<div class="player-card-wrapper">
+      <div class="player-card" id="player-card">
+        <div id="spin-badge">${teamBadge(p.team, 56)}</div>
+        <div class="player-name" id="spin-name">${g.spinning ? '???' : p.name}</div>
+        <div class="player-meta" id="spin-meta">${g.spinning ? '' : `${p.team} · ${p.position}`}</div>
+      </div>
+    </div>`;
+
+    // Category grid
+    html += `<div id="cat-grid" class="category-grid" style="${g.spinning ? 'opacity:0.4;pointer-events:none' : ''}">`;
+    g.categories.forEach(cat => {
+      const used = usedKeys.has(cat.key);
+      html += `<button class="cat-btn" ${used ? 'disabled' : ''} onclick="assignCategory('${cat.key}')">
+        <span class="cat-icon">${cat.icon}</span> ${cat.label}
+      </button>`;
+    });
+    html += `</div>`;
+
+    // Respin button (once per game, requires ad)
+    if (!g.respinUsed) {
+      html += `<button class="respin-btn" onclick="respin()" ${g.spinning ? 'disabled' : ''}>
+        <span class="respin-icon">🔄</span> Watch ad to respin player
+      </button>`;
+    } else {
+      html += `<div style="text-align:center;font-size:0.75rem;color:var(--muted);margin-top:8px">Respin used</div>`;
+    }
+  }
+
+  // Results history
+  if (g.scores.length > 0) {
+    html += `<div class="results-history">`;
+    g.scores.forEach((s, i) => {
+      const cat = g.assignments[i];
+      html += `<div class="result-row">
+        <div class="rr-left">
+          ${teamBadge(s.team, 24)}
+          <div>
+            <div class="rr-name">${s.playerName}</div>
+            <div class="rr-cat">${cat.icon} ${cat.label}</div>
+          </div>
+        </div>
+        <div class="rr-score ${scoreClass(s.rank)}">#${s.rank}</div>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  // Final screen
+  if (g.finished) {
+    let verdict, vColor;
+    if (total <= 30) { verdict = "LEGENDARY"; vColor = "var(--gold)"; }
+    else if (total <= 75) { verdict = "BRILLIANT"; vColor = "var(--green)"; }
+    else if (total <= 100) { verdict = "GREAT"; vColor = "var(--green)"; }
+    else if (total <= 150) { verdict = "SOLID"; vColor = "var(--accent)"; }
+    else if (total <= 250) { verdict = "DECENT EFFORT"; vColor = "var(--orange)"; }
+    else { verdict = "ROUGH DAY"; vColor = "var(--red)"; }
+
+    html += `<div class="final-screen">
+      <h2 style="color:${vColor}">${verdict}</h2>
+      <div class="final-score" style="color:${vColor}">${total}</div>
+      <p style="color:var(--muted);font-size:0.85rem">Total AFL Ranking Score</p>
+      <button class="btn-primary" onclick="startGame()">Play Again</button>
+    </div>`;
+  }
+
+  document.getElementById("app").innerHTML = html;
+}
+
+function renderCategoryGrid() {
+  const grid = document.getElementById("cat-grid");
+  if (grid) {
+    grid.style.opacity = "1";
+    grid.style.pointerEvents = "auto";
+  }
+}
+
+function showStartScreen() {
+  document.getElementById("app").innerHTML = `
+    <div class="how-to-play">
+      <h3>How to Play</h3>
+      <ol>
+        <li><strong>6 random players</strong> appear one at a time from the top 100 (by AFL Rating Points)</li>
+        <li>For each player, <strong>assign a stat category</strong> — each can only be used once</li>
+        <li>Your score = the player's <strong>league-wide ranking</strong> in that stat</li>
+        <li>Lower is better! #1 in goals = just 1 point</li>
+        <li><strong>100+</strong> = outside the top 100 for that stat (adds 100)</li>
+        <li>Total all 6. <strong>Aim for under 150!</strong></li>
+      </ol>
+    </div>
+    <button class="btn-primary" onclick="startGame()">Start Game</button>
+    <p style="text-align:center;color:var(--muted);margin-top:10px;font-size:0.8rem">
+      ${gameData.playerCount} players · Season ${gameData.season} · Updated ${new Date(gameData.lastUpdated).toLocaleDateString()}
+    </p>`;
+}
+
+loadData();
+</script>
+</body>
+</html>

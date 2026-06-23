@@ -1,0 +1,2307 @@
+{
+  "lastUpdated": "2026-06-23T10:49:30.988Z",
+  "season": 2026,
+  "playerCount": 100,
+  "players": [
+    {
+      "name": "Marcus Bontempelli",
+      "team": "Bulldogs",
+      "position": "MID",
+      "ratingRank": 1,
+      "ratingPoints": 680.7,
+      "rankings": {
+        "fantasyPoints": 4,
+        "goals": 35,
+        "disposals": 10,
+        "marks": "100+",
+        "tackles": 22,
+        "disposalEfficiency": 40
+      },
+      "stats": {
+        "fantasyPoints": 1578,
+        "goals": 20,
+        "disposals": 411,
+        "marks": 62,
+        "tackles": 67,
+        "disposalEfficiency": 73
+      }
+    },
+    {
+      "name": "Ed Richards",
+      "team": "Bulldogs",
+      "position": "MID",
+      "ratingRank": 2,
+      "ratingPoints": 641.2,
+      "rankings": {
+        "fantasyPoints": 16,
+        "goals": 97,
+        "disposals": 29,
+        "marks": "100+",
+        "tackles": 18,
+        "disposalEfficiency": 71
+      },
+      "stats": {
+        "fantasyPoints": 1420,
+        "goals": 11,
+        "disposals": 352,
+        "marks": 58,
+        "tackles": 68,
+        "disposalEfficiency": 64.8
+      }
+    },
+    {
+      "name": "Tristan Xerri",
+      "team": "Kangaroos",
+      "position": "RUC",
+      "ratingRank": 3,
+      "ratingPoints": 636.4,
+      "rankings": {
+        "fantasyPoints": 91,
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 14,
+        "disposalEfficiency": 66
+      },
+      "stats": {
+        "fantasyPoints": 1096,
+        "goals": 4,
+        "disposals": 202,
+        "marks": 32,
+        "tackles": 70,
+        "disposalEfficiency": 66.3
+      }
+    },
+    {
+      "name": "Isaac Heeney",
+      "team": "Swans",
+      "position": "MID",
+      "ratingRank": 4,
+      "ratingPoints": 603.8,
+      "rankings": {
+        "fantasyPoints": 34,
+        "goals": 23,
+        "disposals": 44,
+        "marks": "100+",
+        "tackles": 25,
+        "disposalEfficiency": 57
+      },
+      "stats": {
+        "fantasyPoints": 1306,
+        "goals": 23,
+        "disposals": 327,
+        "marks": 35,
+        "tackles": 64,
+        "disposalEfficiency": 68.8
+      }
+    },
+    {
+      "name": "Max Gawn",
+      "team": "Demons",
+      "position": "RUC",
+      "ratingRank": 5,
+      "ratingPoints": 599.2,
+      "rankings": {
+        "fantasyPoints": 2,
+        "goals": "100+",
+        "disposals": 45,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 72
+      },
+      "stats": {
+        "fantasyPoints": 1649,
+        "goals": 10,
+        "disposals": 324,
+        "marks": 61,
+        "tackles": 27,
+        "disposalEfficiency": 64.2
+      }
+    },
+    {
+      "name": "Nasiah Wanganeen-Milera",
+      "team": "Saints",
+      "position": "MID",
+      "ratingRank": 6,
+      "ratingPoints": 573.7,
+      "rankings": {
+        "fantasyPoints": 73,
+        "goals": "100+",
+        "disposals": 48,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 55
+      },
+      "stats": {
+        "fantasyPoints": 1145,
+        "goals": 10,
+        "disposals": 322,
+        "marks": 31,
+        "tackles": 28,
+        "disposalEfficiency": 69.3
+      }
+    },
+    {
+      "name": "Zak Butters",
+      "team": "Power",
+      "position": "MID",
+      "ratingRank": 7,
+      "ratingPoints": 572.4,
+      "rankings": {
+        "fantasyPoints": 12,
+        "goals": "100+",
+        "disposals": 9,
+        "marks": "100+",
+        "tackles": 32,
+        "disposalEfficiency": 39
+      },
+      "stats": {
+        "fantasyPoints": 1451,
+        "goals": 5,
+        "disposals": 417,
+        "marks": 45,
+        "tackles": 58,
+        "disposalEfficiency": 73.1
+      }
+    },
+    {
+      "name": "Noah Anderson",
+      "team": "Suns",
+      "position": "MID",
+      "ratingRank": 8,
+      "ratingPoints": 569.4,
+      "rankings": {
+        "fantasyPoints": 27,
+        "goals": "100+",
+        "disposals": 22,
+        "marks": "100+",
+        "tackles": 75,
+        "disposalEfficiency": 48
+      },
+      "stats": {
+        "fantasyPoints": 1331,
+        "goals": 4,
+        "disposals": 371,
+        "marks": 64,
+        "tackles": 43,
+        "disposalEfficiency": 70.9
+      }
+    },
+    {
+      "name": "Caleb Serong",
+      "team": "Dockers",
+      "position": "MID",
+      "ratingRank": 9,
+      "ratingPoints": 567.7,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": 100,
+        "marks": "100+",
+        "tackles": 64,
+        "disposalEfficiency": 69
+      },
+      "stats": {
+        "fantasyPoints": 990,
+        "goals": 6,
+        "disposals": 271,
+        "marks": 27,
+        "tackles": 45,
+        "disposalEfficiency": 65.7
+      }
+    },
+    {
+      "name": "Luke Jackson",
+      "team": "Dockers",
+      "position": "RUC",
+      "ratingRank": 10,
+      "ratingPoints": 561.8,
+      "rankings": {
+        "fantasyPoints": 9,
+        "goals": 64,
+        "disposals": 97,
+        "marks": "100+",
+        "tackles": 10,
+        "disposalEfficiency": 59
+      },
+      "stats": {
+        "fantasyPoints": 1497,
+        "goals": 15,
+        "disposals": 275,
+        "marks": 39,
+        "tackles": 76,
+        "disposalEfficiency": 68.4
+      }
+    },
+    {
+      "name": "Reilly O'Brien",
+      "team": "Crows",
+      "position": "RUC",
+      "ratingRank": 101,
+      "ratingPoints": 365,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 31,
+        "goals": 0,
+        "disposals": 3,
+        "marks": 1,
+        "tackles": 1,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Nick Daicos",
+      "team": "Magpies",
+      "position": "MID",
+      "ratingRank": 12,
+      "ratingPoints": 549.1,
+      "rankings": {
+        "fantasyPoints": 3,
+        "goals": 64,
+        "disposals": 1,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 70
+      },
+      "stats": {
+        "fantasyPoints": 1583,
+        "goals": 15,
+        "disposals": 460,
+        "marks": 64,
+        "tackles": 28,
+        "disposalEfficiency": 65.4
+      }
+    },
+    {
+      "name": "Matt Rowell",
+      "team": "Suns",
+      "position": "MID",
+      "ratingRank": 13,
+      "ratingPoints": 543,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 42,
+        "disposalEfficiency": 54
+      },
+      "stats": {
+        "fantasyPoints": 810,
+        "goals": 3,
+        "disposals": 216,
+        "marks": 20,
+        "tackles": 55,
+        "disposalEfficiency": 69.4
+      }
+    },
+    {
+      "name": "Bailey Smith",
+      "team": "Cats",
+      "position": "MID",
+      "ratingRank": 14,
+      "ratingPoints": 539.9,
+      "rankings": {
+        "fantasyPoints": 1,
+        "goals": "100+",
+        "disposals": 2,
+        "marks": "100+",
+        "tackles": 14,
+        "disposalEfficiency": 65
+      },
+      "stats": {
+        "fantasyPoints": 1661,
+        "goals": 6,
+        "disposals": 452,
+        "marks": 58,
+        "tackles": 70,
+        "disposalEfficiency": 66.4
+      }
+    },
+    {
+      "name": "Max Holmes",
+      "team": "Cats",
+      "position": "MID",
+      "ratingRank": 15,
+      "ratingPoints": 539.8,
+      "rankings": {
+        "fantasyPoints": 6,
+        "goals": "100+",
+        "disposals": 4,
+        "marks": 63,
+        "tackles": 55,
+        "disposalEfficiency": 24
+      },
+      "stats": {
+        "fantasyPoints": 1551,
+        "goals": 4,
+        "disposals": 438,
+        "marks": 77,
+        "tackles": 48,
+        "disposalEfficiency": 76
+      }
+    },
+    {
+      "name": "Brodie Grundy",
+      "team": "Swans",
+      "position": "RUC",
+      "ratingRank": 16,
+      "ratingPoints": 537.2,
+      "rankings": {
+        "fantasyPoints": 26,
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 44,
+        "disposalEfficiency": 76
+      },
+      "stats": {
+        "fantasyPoints": 1354,
+        "goals": 8,
+        "disposals": 268,
+        "marks": 30,
+        "tackles": 53,
+        "disposalEfficiency": 62.3
+      }
+    },
+    {
+      "name": "Kysaiah Pickett",
+      "team": "Demons",
+      "position": "MID",
+      "ratingRank": 17,
+      "ratingPoints": 533,
+      "rankings": {
+        "fantasyPoints": 14,
+        "goals": 25,
+        "disposals": 39,
+        "marks": "100+",
+        "tackles": 12,
+        "disposalEfficiency": 83
+      },
+      "stats": {
+        "fantasyPoints": 1437,
+        "goals": 22,
+        "disposals": 337,
+        "marks": 44,
+        "tackles": 71,
+        "disposalEfficiency": 59.6
+      }
+    },
+    {
+      "name": "Jordan Dawson",
+      "team": "Crows",
+      "position": "MID",
+      "ratingRank": 18,
+      "ratingPoints": 527.4,
+      "rankings": {
+        "fantasyPoints": 41,
+        "goals": 51,
+        "disposals": 94,
+        "marks": "100+",
+        "tackles": 25,
+        "disposalEfficiency": 56
+      },
+      "stats": {
+        "fantasyPoints": 1269,
+        "goals": 17,
+        "disposals": 276,
+        "marks": 63,
+        "tackles": 64,
+        "disposalEfficiency": 69.2
+      }
+    },
+    {
+      "name": "Christian Petracca",
+      "team": "Suns",
+      "position": "MID",
+      "ratingRank": 19,
+      "ratingPoints": 521.1,
+      "rankings": {
+        "fantasyPoints": 83,
+        "goals": 42,
+        "disposals": 59,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 42
+      },
+      "stats": {
+        "fantasyPoints": 1121,
+        "goals": 18,
+        "disposals": 309,
+        "marks": 43,
+        "tackles": 34,
+        "disposalEfficiency": 72.2
+      }
+    },
+    {
+      "name": "Chad Warner",
+      "team": "Swans",
+      "position": "FWD",
+      "ratingRank": 20,
+      "ratingPoints": 516.2,
+      "rankings": {
+        "fantasyPoints": 53,
+        "goals": 42,
+        "disposals": 54,
+        "marks": "100+",
+        "tackles": 79,
+        "disposalEfficiency": 85
+      },
+      "stats": {
+        "fantasyPoints": 1199,
+        "goals": 18,
+        "disposals": 314,
+        "marks": 44,
+        "tackles": 42,
+        "disposalEfficiency": 59.2
+      }
+    },
+    {
+      "name": "Finn Callaghan",
+      "team": "Giants",
+      "position": "MID",
+      "ratingRank": 21,
+      "ratingPoints": 509.2,
+      "rankings": {
+        "fantasyPoints": 24,
+        "goals": "100+",
+        "disposals": 12,
+        "marks": "100+",
+        "tackles": 37,
+        "disposalEfficiency": 44
+      },
+      "stats": {
+        "fantasyPoints": 1356,
+        "goals": 6,
+        "disposals": 402,
+        "marks": 43,
+        "tackles": 57,
+        "disposalEfficiency": 71.4
+      }
+    },
+    {
+      "name": "Lachie Neale",
+      "team": "Lions",
+      "position": "MID",
+      "ratingRank": 22,
+      "ratingPoints": 506,
+      "rankings": {
+        "fantasyPoints": 13,
+        "goals": "100+",
+        "disposals": 6,
+        "marks": 63,
+        "tackles": "100+",
+        "disposalEfficiency": 21
+      },
+      "stats": {
+        "fantasyPoints": 1448,
+        "goals": 4,
+        "disposals": 426,
+        "marks": 77,
+        "tackles": 34,
+        "disposalEfficiency": 76.5
+      }
+    },
+    {
+      "name": "Nick Blakey",
+      "team": "Swans",
+      "position": "DEF",
+      "ratingRank": 23,
+      "ratingPoints": 503.7,
+      "rankings": {
+        "fantasyPoints": 52,
+        "goals": "100+",
+        "disposals": 24,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 18
+      },
+      "stats": {
+        "fantasyPoints": 1201,
+        "goals": 4,
+        "disposals": 364,
+        "marks": 55,
+        "tackles": 21,
+        "disposalEfficiency": 77.5
+      }
+    },
+    {
+      "name": "Touk Miller",
+      "team": "Suns",
+      "position": "FWD",
+      "ratingRank": 24,
+      "ratingPoints": 502.1,
+      "rankings": {
+        "fantasyPoints": 49,
+        "goals": "100+",
+        "disposals": 32,
+        "marks": "100+",
+        "tackles": 48,
+        "disposalEfficiency": 19
+      },
+      "stats": {
+        "fantasyPoints": 1227,
+        "goals": 7,
+        "disposals": 349,
+        "marks": 52,
+        "tackles": 52,
+        "disposalEfficiency": 77.4
+      }
+    },
+    {
+      "name": "Tom Liberatore",
+      "team": "Bulldogs",
+      "position": "MID",
+      "ratingRank": 25,
+      "ratingPoints": 499.6,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 468,
+        "goals": 1,
+        "disposals": 121,
+        "marks": 18,
+        "tackles": 27,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Luke Davies-Uniacke",
+      "team": "Kangaroos",
+      "position": "MID",
+      "ratingRank": 26,
+      "ratingPoints": 498.7,
+      "rankings": {
+        "fantasyPoints": 39,
+        "goals": "100+",
+        "disposals": 31,
+        "marks": "100+",
+        "tackles": 18,
+        "disposalEfficiency": 16
+      },
+      "stats": {
+        "fantasyPoints": 1273,
+        "goals": 3,
+        "disposals": 350,
+        "marks": 58,
+        "tackles": 68,
+        "disposalEfficiency": 79.1
+      }
+    },
+    {
+      "name": "Hugh McCluggage",
+      "team": "Lions",
+      "position": "MID",
+      "ratingRank": 27,
+      "ratingPoints": 493.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 82
+      },
+      "stats": {
+        "fantasyPoints": 630,
+        "goals": 5,
+        "disposals": 155,
+        "marks": 35,
+        "tackles": 27,
+        "disposalEfficiency": 60
+      }
+    },
+    {
+      "name": "Zach Merrett",
+      "team": "Bombers",
+      "position": "MID",
+      "ratingRank": 28,
+      "ratingPoints": 491.1,
+      "rankings": {
+        "fantasyPoints": 6,
+        "goals": "100+",
+        "disposals": 13,
+        "marks": 83,
+        "tackles": 14,
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 1551,
+        "goals": 7,
+        "disposals": 398,
+        "marks": 72,
+        "tackles": 70,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Andrew Brayshaw",
+      "team": "Dockers",
+      "position": "MID",
+      "ratingRank": 29,
+      "ratingPoints": 487,
+      "rankings": {
+        "fantasyPoints": 34,
+        "goals": "100+",
+        "disposals": 35,
+        "marks": "100+",
+        "tackles": 6,
+        "disposalEfficiency": 21
+      },
+      "stats": {
+        "fantasyPoints": 1306,
+        "goals": 4,
+        "disposals": 345,
+        "marks": 41,
+        "tackles": 85,
+        "disposalEfficiency": 76.5
+      }
+    },
+    {
+      "name": "Jack Sinclair",
+      "team": "Saints",
+      "position": "DEF",
+      "ratingRank": 30,
+      "ratingPoints": 480.9,
+      "rankings": {
+        "fantasyPoints": 11,
+        "goals": "100+",
+        "disposals": 11,
+        "marks": 19,
+        "tackles": "100+",
+        "disposalEfficiency": 4
+      },
+      "stats": {
+        "fantasyPoints": 1486,
+        "goals": 2,
+        "disposals": 407,
+        "marks": 94,
+        "tackles": 24,
+        "disposalEfficiency": 84
+      }
+    },
+    {
+      "name": "Bailey Dale",
+      "team": "Bulldogs",
+      "position": "DEF",
+      "ratingRank": 31,
+      "ratingPoints": 475.7,
+      "rankings": {
+        "fantasyPoints": 22,
+        "goals": "100+",
+        "disposals": 14,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 13
+      },
+      "stats": {
+        "fantasyPoints": 1368,
+        "goals": 1,
+        "disposals": 397,
+        "marks": 64,
+        "tackles": 23,
+        "disposalEfficiency": 80.1
+      }
+    },
+    {
+      "name": "Darcy Cameron",
+      "team": "Magpies",
+      "position": "RUC",
+      "ratingRank": 32,
+      "ratingPoints": 468.3,
+      "rankings": {
+        "fantasyPoints": 95,
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 73
+      },
+      "stats": {
+        "fantasyPoints": 1085,
+        "goals": 1,
+        "disposals": 220,
+        "marks": 51,
+        "tackles": 34,
+        "disposalEfficiency": 63.6
+      }
+    },
+    {
+      "name": "Jai Newcombe",
+      "team": "Hawks",
+      "position": "MID",
+      "ratingRank": 33,
+      "ratingPoints": 467.6,
+      "rankings": {
+        "fantasyPoints": 42,
+        "goals": "100+",
+        "disposals": 21,
+        "marks": "100+",
+        "tackles": 40,
+        "disposalEfficiency": 23
+      },
+      "stats": {
+        "fantasyPoints": 1259,
+        "goals": 6,
+        "disposals": 373,
+        "marks": 39,
+        "tackles": 56,
+        "disposalEfficiency": 76.1
+      }
+    },
+    {
+      "name": "Jack Crisp",
+      "team": "Magpies",
+      "position": "MID",
+      "ratingRank": 34,
+      "ratingPoints": 462.3,
+      "rankings": {
+        "fantasyPoints": 44,
+        "goals": "100+",
+        "disposals": 55,
+        "marks": 60,
+        "tackles": 32,
+        "disposalEfficiency": 32
+      },
+      "stats": {
+        "fantasyPoints": 1253,
+        "goals": 3,
+        "disposals": 313,
+        "marks": 78,
+        "tackles": 58,
+        "disposalEfficiency": 74.1
+      }
+    },
+    {
+      "name": "Patrick Cripps",
+      "team": "Blues",
+      "position": "MID",
+      "ratingRank": 35,
+      "ratingPoints": 460.5,
+      "rankings": {
+        "fantasyPoints": 46,
+        "goals": "100+",
+        "disposals": 22,
+        "marks": "100+",
+        "tackles": 18,
+        "disposalEfficiency": 66
+      },
+      "stats": {
+        "fantasyPoints": 1237,
+        "goals": 8,
+        "disposals": 371,
+        "marks": 34,
+        "tackles": 68,
+        "disposalEfficiency": 66.3
+      }
+    },
+    {
+      "name": "George Hewett",
+      "team": "Blues",
+      "position": "MID",
+      "ratingRank": 36,
+      "ratingPoints": 459.5,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 71,
+        "disposalEfficiency": 6
+      },
+      "stats": {
+        "fantasyPoints": 871,
+        "goals": 5,
+        "disposals": 221,
+        "marks": 41,
+        "tackles": 44,
+        "disposalEfficiency": 81.9
+      }
+    },
+    {
+      "name": "Izak Rankine",
+      "team": "Crows",
+      "position": "FWD",
+      "ratingRank": 37,
+      "ratingPoints": 453.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 97,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 59,
+        "disposalEfficiency": 75
+      },
+      "stats": {
+        "fantasyPoints": 937,
+        "goals": 11,
+        "disposals": 221,
+        "marks": 38,
+        "tackles": 47,
+        "disposalEfficiency": 62.4
+      }
+    },
+    {
+      "name": "Sam Walsh",
+      "team": "Blues",
+      "position": "MID",
+      "ratingRank": 38,
+      "ratingPoints": 442.2,
+      "rankings": {
+        "fantasyPoints": 23,
+        "goals": "100+",
+        "disposals": 15,
+        "marks": "100+",
+        "tackles": 24,
+        "disposalEfficiency": 27
+      },
+      "stats": {
+        "fantasyPoints": 1367,
+        "goals": 4,
+        "disposals": 395,
+        "marks": 55,
+        "tackles": 65,
+        "disposalEfficiency": 74.7
+      }
+    },
+    {
+      "name": "Max Hall",
+      "team": "Saints",
+      "position": "FWD",
+      "ratingRank": 39,
+      "ratingPoints": 441.9,
+      "rankings": {
+        "fantasyPoints": 50,
+        "goals": 58,
+        "disposals": 63,
+        "marks": "100+",
+        "tackles": 62,
+        "disposalEfficiency": 20
+      },
+      "stats": {
+        "fantasyPoints": 1226,
+        "goals": 16,
+        "disposals": 305,
+        "marks": 64,
+        "tackles": 46,
+        "disposalEfficiency": 76.7
+      }
+    },
+    {
+      "name": "Sam Durham",
+      "team": "Bombers",
+      "position": "MID",
+      "ratingRank": 40,
+      "ratingPoints": 440.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 44,
+        "disposalEfficiency": 44
+      },
+      "stats": {
+        "fantasyPoints": 959,
+        "goals": 6,
+        "disposals": 255,
+        "marks": 45,
+        "tackles": 53,
+        "disposalEfficiency": 71.4
+      }
+    },
+    {
+      "name": "Riley Thilthorpe",
+      "team": "Crows",
+      "position": "KEYF",
+      "ratingRank": 41,
+      "ratingPoints": 436.8,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 42,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 79
+      },
+      "stats": {
+        "fantasyPoints": 829,
+        "goals": 18,
+        "disposals": 154,
+        "marks": 61,
+        "tackles": 20,
+        "disposalEfficiency": 60.4
+      }
+    },
+    {
+      "name": "Tom Atkins",
+      "team": "Cats",
+      "position": "MID",
+      "ratingRank": 42,
+      "ratingPoints": 436.4,
+      "rankings": {
+        "fantasyPoints": 96,
+        "goals": "100+",
+        "disposals": 92,
+        "marks": "100+",
+        "tackles": 2,
+        "disposalEfficiency": 49
+      },
+      "stats": {
+        "fantasyPoints": 1082,
+        "goals": 2,
+        "disposals": 277,
+        "marks": 22,
+        "tackles": 96,
+        "disposalEfficiency": 70.8
+      }
+    },
+    {
+      "name": "Tim Taranto",
+      "team": "Tigers",
+      "position": "MID",
+      "ratingRank": 43,
+      "ratingPoints": 435.3,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": 85,
+        "marks": "100+",
+        "tackles": 37,
+        "disposalEfficiency": 62
+      },
+      "stats": {
+        "fantasyPoints": 1057,
+        "goals": 6,
+        "disposals": 282,
+        "marks": 38,
+        "tackles": 57,
+        "disposalEfficiency": 68.1
+      }
+    },
+    {
+      "name": "Toby Nankervis",
+      "team": "Tigers",
+      "position": "RUC",
+      "ratingRank": 44,
+      "ratingPoints": 433.6,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 37
+      },
+      "stats": {
+        "fantasyPoints": 226,
+        "goals": 0,
+        "disposals": 45,
+        "marks": 5,
+        "tackles": 13,
+        "disposalEfficiency": 73.3
+      }
+    },
+    {
+      "name": "Jarrod Witts",
+      "team": "Suns",
+      "position": "RUC",
+      "ratingRank": 45,
+      "ratingPoints": 432.7,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 88
+      },
+      "stats": {
+        "fantasyPoints": 760,
+        "goals": 2,
+        "disposals": 119,
+        "marks": 18,
+        "tackles": 22,
+        "disposalEfficiency": 56.3
+      }
+    },
+    {
+      "name": "Zac Bailey",
+      "team": "Lions",
+      "position": "FWD",
+      "ratingRank": 46,
+      "ratingPoints": 432.5,
+      "rankings": {
+        "fantasyPoints": 69,
+        "goals": 42,
+        "disposals": 99,
+        "marks": 87,
+        "tackles": "100+",
+        "disposalEfficiency": 52
+      },
+      "stats": {
+        "fantasyPoints": 1157,
+        "goals": 18,
+        "disposals": 273,
+        "marks": 71,
+        "tackles": 35,
+        "disposalEfficiency": 69.6
+      }
+    },
+    {
+      "name": "Jeremy Cameron",
+      "team": "Cats",
+      "position": "KEYF",
+      "ratingRank": 47,
+      "ratingPoints": 431.7,
+      "rankings": {
+        "fantasyPoints": 70,
+        "goals": 2,
+        "disposals": "100+",
+        "marks": 21,
+        "tackles": "100+",
+        "disposalEfficiency": 81
+      },
+      "stats": {
+        "fantasyPoints": 1155,
+        "goals": 39,
+        "disposals": 204,
+        "marks": 93,
+        "tackles": 15,
+        "disposalEfficiency": 60.3
+      }
+    },
+    {
+      "name": "Tim English",
+      "team": "Bulldogs",
+      "position": "RUC",
+      "ratingRank": 48,
+      "ratingPoints": 430.4,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 878,
+        "goals": 5,
+        "disposals": 151,
+        "marks": 44,
+        "tackles": 25,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Dayne Zorko",
+      "team": "Lions",
+      "position": "DEF",
+      "ratingRank": 49,
+      "ratingPoints": 429.6,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 17
+      },
+      "stats": {
+        "fantasyPoints": 702,
+        "goals": 2,
+        "disposals": 171,
+        "marks": 51,
+        "tackles": 13,
+        "disposalEfficiency": 78.4
+      }
+    },
+    {
+      "name": "Shaun Mannagh",
+      "team": "Cats",
+      "position": "FWD",
+      "ratingRank": 50,
+      "ratingPoints": 423.1,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 32,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 78
+      },
+      "stats": {
+        "fantasyPoints": 1010,
+        "goals": 21,
+        "disposals": 235,
+        "marks": 34,
+        "tackles": 34,
+        "disposalEfficiency": 61.3
+      }
+    },
+    {
+      "name": "Shai Bolton",
+      "team": "Dockers",
+      "position": "MID",
+      "ratingRank": 51,
+      "ratingPoints": 422.3,
+      "rankings": {
+        "fantasyPoints": 61,
+        "goals": 83,
+        "disposals": 41,
+        "marks": "100+",
+        "tackles": 71,
+        "disposalEfficiency": 50
+      },
+      "stats": {
+        "fantasyPoints": 1178,
+        "goals": 13,
+        "disposals": 335,
+        "marks": 40,
+        "tackles": 44,
+        "disposalEfficiency": 70.7
+      }
+    },
+    {
+      "name": "Lachie Ash",
+      "team": "Giants",
+      "position": "DEF",
+      "ratingRank": 52,
+      "ratingPoints": 421.9,
+      "rankings": {
+        "fantasyPoints": 8,
+        "goals": "100+",
+        "disposals": 8,
+        "marks": 3,
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 1500,
+        "goals": 0,
+        "disposals": 418,
+        "marks": 112,
+        "tackles": 17,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Nick Watson",
+      "team": "Hawks",
+      "position": "FWD",
+      "ratingRank": 53,
+      "ratingPoints": 421.5,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 3,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 47
+      },
+      "stats": {
+        "fantasyPoints": 957,
+        "goals": 36,
+        "disposals": 198,
+        "marks": 33,
+        "tackles": 33,
+        "disposalEfficiency": 71.2
+      }
+    },
+    {
+      "name": "Matthew Kennedy",
+      "team": "Bulldogs",
+      "position": "MID",
+      "ratingRank": 54,
+      "ratingPoints": 418.1,
+      "rankings": {
+        "fantasyPoints": 18,
+        "goals": "100+",
+        "disposals": 16,
+        "marks": "100+",
+        "tackles": 10,
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 1408,
+        "goals": 3,
+        "disposals": 381,
+        "marks": 65,
+        "tackles": 76,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Will Ashcroft",
+      "team": "Lions",
+      "position": "MID",
+      "ratingRank": 55,
+      "ratingPoints": 416.9,
+      "rankings": {
+        "fantasyPoints": 19,
+        "goals": "100+",
+        "disposals": 18,
+        "marks": "100+",
+        "tackles": 51,
+        "disposalEfficiency": 60
+      },
+      "stats": {
+        "fantasyPoints": 1392,
+        "goals": 7,
+        "disposals": 377,
+        "marks": 66,
+        "tackles": 49,
+        "disposalEfficiency": 68.2
+      }
+    },
+    {
+      "name": "Joel Freijah",
+      "team": "Bulldogs",
+      "position": "FWD",
+      "ratingRank": 56,
+      "ratingPoints": 415.6,
+      "rankings": {
+        "fantasyPoints": 77,
+        "goals": "100+",
+        "disposals": 75,
+        "marks": "100+",
+        "tackles": 42,
+        "disposalEfficiency": 51
+      },
+      "stats": {
+        "fantasyPoints": 1132,
+        "goals": 7,
+        "disposals": 292,
+        "marks": 57,
+        "tackles": 55,
+        "disposalEfficiency": 69.9
+      }
+    },
+    {
+      "name": "Kieren Briggs",
+      "team": "Giants",
+      "position": "RUC",
+      "ratingRank": 57,
+      "ratingPoints": 415.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 96,
+        "disposalEfficiency": 86
+      },
+      "stats": {
+        "fantasyPoints": 794,
+        "goals": 1,
+        "disposals": 127,
+        "marks": 17,
+        "tackles": 38,
+        "disposalEfficiency": 58.3
+      }
+    },
+    {
+      "name": "Harris Andrews",
+      "team": "Lions",
+      "position": "KEYD",
+      "ratingRank": 58,
+      "ratingPoints": 414.9,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": 60,
+        "tackles": "100+",
+        "disposalEfficiency": 1
+      },
+      "stats": {
+        "fantasyPoints": 688,
+        "goals": 0,
+        "disposals": 156,
+        "marks": 78,
+        "tackles": 13,
+        "disposalEfficiency": 88.5
+      }
+    },
+    {
+      "name": "Kade Chandler",
+      "team": "Demons",
+      "position": "FWD",
+      "ratingRank": 59,
+      "ratingPoints": 413.8,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 58,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 25,
+        "disposalEfficiency": 32
+      },
+      "stats": {
+        "fantasyPoints": 1064,
+        "goals": 16,
+        "disposals": 247,
+        "marks": 37,
+        "tackles": 64,
+        "disposalEfficiency": 74.1
+      }
+    },
+    {
+      "name": "Gryan Miers",
+      "team": "Cats",
+      "position": "FWD",
+      "ratingRank": 60,
+      "ratingPoints": 413.3,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 41
+      },
+      "stats": {
+        "fantasyPoints": 778,
+        "goals": 0,
+        "disposals": 205,
+        "marks": 51,
+        "tackles": 24,
+        "disposalEfficiency": 72.7
+      }
+    },
+    {
+      "name": "Jason Horne-Francis",
+      "team": "Power",
+      "position": "MID",
+      "ratingRank": 61,
+      "ratingPoints": 412.5,
+      "rankings": {
+        "fantasyPoints": 30,
+        "goals": 38,
+        "disposals": 55,
+        "marks": 83,
+        "tackles": 51,
+        "disposalEfficiency": 76
+      },
+      "stats": {
+        "fantasyPoints": 1321,
+        "goals": 19,
+        "disposals": 313,
+        "marks": 72,
+        "tackles": 49,
+        "disposalEfficiency": 62.3
+      }
+    },
+    {
+      "name": "Jack Steele",
+      "team": "Demons",
+      "position": "MID",
+      "ratingRank": 62,
+      "ratingPoints": 411.8,
+      "rankings": {
+        "fantasyPoints": 21,
+        "goals": "100+",
+        "disposals": 26,
+        "marks": "100+",
+        "tackles": 4,
+        "disposalEfficiency": 37
+      },
+      "stats": {
+        "fantasyPoints": 1384,
+        "goals": 3,
+        "disposals": 359,
+        "marks": 47,
+        "tackles": 91,
+        "disposalEfficiency": 73.3
+      }
+    },
+    {
+      "name": "Darcy Wilmot",
+      "team": "Lions",
+      "position": "DEF",
+      "ratingRank": 63,
+      "ratingPoints": 411.6,
+      "rankings": {
+        "fantasyPoints": 37,
+        "goals": "100+",
+        "disposals": 45,
+        "marks": 5,
+        "tackles": "100+",
+        "disposalEfficiency": 12
+      },
+      "stats": {
+        "fantasyPoints": 1293,
+        "goals": 1,
+        "disposals": 324,
+        "marks": 105,
+        "tackles": 25,
+        "disposalEfficiency": 80.6
+      }
+    },
+    {
+      "name": "Rowan Marshall",
+      "team": "Saints",
+      "position": "RUC",
+      "ratingRank": 64,
+      "ratingPoints": 411.5,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 74
+      },
+      "stats": {
+        "fantasyPoints": 1032,
+        "goals": 6,
+        "disposals": 222,
+        "marks": 55,
+        "tackles": 30,
+        "disposalEfficiency": 63.5
+      }
+    },
+    {
+      "name": "Josh Dunkley",
+      "team": "Lions",
+      "position": "MID",
+      "ratingRank": 65,
+      "ratingPoints": 409.9,
+      "rankings": {
+        "fantasyPoints": 58,
+        "goals": "100+",
+        "disposals": 87,
+        "marks": "100+",
+        "tackles": 8,
+        "disposalEfficiency": 58
+      },
+      "stats": {
+        "fantasyPoints": 1184,
+        "goals": 1,
+        "disposals": 281,
+        "marks": 58,
+        "tackles": 83,
+        "disposalEfficiency": 68.7
+      }
+    },
+    {
+      "name": "Scott Pendlebury",
+      "team": "Magpies",
+      "position": "MID",
+      "ratingRank": 66,
+      "ratingPoints": 405.4,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 13
+      },
+      "stats": {
+        "fantasyPoints": 842,
+        "goals": 3,
+        "disposals": 241,
+        "marks": 47,
+        "tackles": 25,
+        "disposalEfficiency": 80.1
+      }
+    },
+    {
+      "name": "Jy Simpkin",
+      "team": "Kangaroos",
+      "position": "MID",
+      "ratingRank": 67,
+      "ratingPoints": 401.5,
+      "rankings": {
+        "fantasyPoints": 92,
+        "goals": "100+",
+        "disposals": 71,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 36
+      },
+      "stats": {
+        "fantasyPoints": 1091,
+        "goals": 7,
+        "disposals": 297,
+        "marks": 66,
+        "tackles": 27,
+        "disposalEfficiency": 73.7
+      }
+    },
+    {
+      "name": "Errol Gulden",
+      "team": "Swans",
+      "position": "FWD",
+      "ratingRank": 68,
+      "ratingPoints": 400.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 28
+      },
+      "stats": {
+        "fantasyPoints": 227,
+        "goals": 1,
+        "disposals": 47,
+        "marks": 9,
+        "tackles": 19,
+        "disposalEfficiency": 74.5
+      }
+    },
+    {
+      "name": "Josh Treacy",
+      "team": "Dockers",
+      "position": "KEYF",
+      "ratingRank": 69,
+      "ratingPoints": 397.9,
+      "rankings": {
+        "fantasyPoints": 74,
+        "goals": 8,
+        "disposals": "100+",
+        "marks": 10,
+        "tackles": "100+",
+        "disposalEfficiency": 43
+      },
+      "stats": {
+        "fantasyPoints": 1141,
+        "goals": 34,
+        "disposals": 190,
+        "marks": 98,
+        "tackles": 34,
+        "disposalEfficiency": 72.1
+      }
+    },
+    {
+      "name": "Sam Darcy",
+      "team": "Bulldogs",
+      "position": "KEYF",
+      "ratingRank": 70,
+      "ratingPoints": 395.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 87,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 87
+      },
+      "stats": {
+        "fantasyPoints": 381,
+        "goals": 12,
+        "disposals": 69,
+        "marks": 21,
+        "tackles": 11,
+        "disposalEfficiency": 56.5
+      }
+    },
+    {
+      "name": "Connor Rozee",
+      "team": "Power",
+      "position": "MID",
+      "ratingRank": 71,
+      "ratingPoints": 394.8,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 64
+      },
+      "stats": {
+        "fantasyPoints": 161,
+        "goals": 0,
+        "disposals": 45,
+        "marks": 9,
+        "tackles": 6,
+        "disposalEfficiency": 66.7
+      }
+    },
+    {
+      "name": "Clayton Oliver",
+      "team": "Giants",
+      "position": "MID",
+      "ratingRank": 72,
+      "ratingPoints": 391.5,
+      "rankings": {
+        "fantasyPoints": 20,
+        "goals": "100+",
+        "disposals": 3,
+        "marks": "100+",
+        "tackles": 18,
+        "disposalEfficiency": 35
+      },
+      "stats": {
+        "fantasyPoints": 1387,
+        "goals": 2,
+        "disposals": 441,
+        "marks": 41,
+        "tackles": 68,
+        "disposalEfficiency": 73.9
+      }
+    },
+    {
+      "name": "Harry Sheezel",
+      "team": "Kangaroos",
+      "position": "MID",
+      "ratingRank": 73,
+      "ratingPoints": 388.1,
+      "rankings": {
+        "fantasyPoints": 5,
+        "goals": "100+",
+        "disposals": 5,
+        "marks": 25,
+        "tackles": 32,
+        "disposalEfficiency": 28
+      },
+      "stats": {
+        "fantasyPoints": 1573,
+        "goals": 6,
+        "disposals": 427,
+        "marks": 90,
+        "tackles": 58,
+        "disposalEfficiency": 74.5
+      }
+    },
+    {
+      "name": "Darcy Moore",
+      "team": "Magpies",
+      "position": "KEYD",
+      "ratingRank": 74,
+      "ratingPoints": 387.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 63
+      },
+      "stats": {
+        "fantasyPoints": 106,
+        "goals": 0,
+        "disposals": 25,
+        "marks": 12,
+        "tackles": 3,
+        "disposalEfficiency": 68
+      }
+    },
+    {
+      "name": "Luke Parker",
+      "team": "Kangaroos",
+      "position": "DEF",
+      "ratingRank": 75,
+      "ratingPoints": 387.1,
+      "rankings": {
+        "fantasyPoints": 32,
+        "goals": "100+",
+        "disposals": 28,
+        "marks": 14,
+        "tackles": "100+",
+        "disposalEfficiency": 11
+      },
+      "stats": {
+        "fantasyPoints": 1319,
+        "goals": 2,
+        "disposals": 353,
+        "marks": 96,
+        "tackles": 28,
+        "disposalEfficiency": 80.7
+      }
+    },
+    {
+      "name": "Lloyd Meek",
+      "team": "Hawks",
+      "position": "RUC",
+      "ratingRank": 76,
+      "ratingPoints": 385.8,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 79,
+        "disposalEfficiency": 68
+      },
+      "stats": {
+        "fantasyPoints": 906,
+        "goals": 3,
+        "disposals": 154,
+        "marks": 32,
+        "tackles": 42,
+        "disposalEfficiency": 66.2
+      }
+    },
+    {
+      "name": "Trent Rivers",
+      "team": "Demons",
+      "position": "DEF",
+      "ratingRank": 77,
+      "ratingPoints": 384.8,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 9
+      },
+      "stats": {
+        "fantasyPoints": 608,
+        "goals": 3,
+        "disposals": 157,
+        "marks": 40,
+        "tackles": 17,
+        "disposalEfficiency": 81.5
+      }
+    },
+    {
+      "name": "Callum Wilkie",
+      "team": "Saints",
+      "position": "KEYD",
+      "ratingRank": 78,
+      "ratingPoints": 384.6,
+      "rankings": {
+        "fantasyPoints": 10,
+        "goals": "100+",
+        "disposals": 30,
+        "marks": 1,
+        "tackles": "100+",
+        "disposalEfficiency": 3
+      },
+      "stats": {
+        "fantasyPoints": 1487,
+        "goals": 0,
+        "disposals": 351,
+        "marks": 146,
+        "tackles": 28,
+        "disposalEfficiency": 84.9
+      }
+    },
+    {
+      "name": "Toby Greene",
+      "team": "Giants",
+      "position": "FWD",
+      "ratingRank": 79,
+      "ratingPoints": 384.2,
+      "rankings": {
+        "fantasyPoints": 63,
+        "goals": 25,
+        "disposals": 77,
+        "marks": "100+",
+        "tackles": 96,
+        "disposalEfficiency": 89
+      },
+      "stats": {
+        "fantasyPoints": 1171,
+        "goals": 22,
+        "disposals": 291,
+        "marks": 51,
+        "tackles": 38,
+        "disposalEfficiency": 56
+      }
+    },
+    {
+      "name": "Jack Macrae",
+      "team": "Saints",
+      "position": "MID",
+      "ratingRank": 80,
+      "ratingPoints": 383.8,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 79,
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 730,
+        "goals": 0,
+        "disposals": 207,
+        "marks": 29,
+        "tackles": 42,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Dylan Moore",
+      "team": "Hawks",
+      "position": "FWD",
+      "ratingRank": 81,
+      "ratingPoints": 383.1,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 64,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 30
+      },
+      "stats": {
+        "fantasyPoints": 965,
+        "goals": 15,
+        "disposals": 238,
+        "marks": 53,
+        "tackles": 33,
+        "disposalEfficiency": 74.4
+      }
+    },
+    {
+      "name": "Sam Collins",
+      "team": "Suns",
+      "position": "KEYD",
+      "ratingRank": 82,
+      "ratingPoints": 382.3,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": 17,
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 878,
+        "goals": 0,
+        "disposals": 209,
+        "marks": 95,
+        "tackles": 18,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Jack Gunston",
+      "team": "Hawks",
+      "position": "KEYF",
+      "ratingRank": 83,
+      "ratingPoints": 382,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 5,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 84
+      },
+      "stats": {
+        "fantasyPoints": 699,
+        "goals": 35,
+        "disposals": 101,
+        "marks": 54,
+        "tackles": 8,
+        "disposalEfficiency": 59.4
+      }
+    },
+    {
+      "name": "Oliver Dempsey",
+      "team": "Cats",
+      "position": "MID",
+      "ratingRank": 84,
+      "ratingPoints": 381.2,
+      "rankings": {
+        "fantasyPoints": 97,
+        "goals": 64,
+        "disposals": 94,
+        "marks": 87,
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 1079,
+        "goals": 15,
+        "disposals": 276,
+        "marks": 71,
+        "tackles": 26,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Bodhi Uwland",
+      "team": "Suns",
+      "position": "DEF",
+      "ratingRank": 85,
+      "ratingPoints": 379.4,
+      "rankings": {
+        "fantasyPoints": 47,
+        "goals": "100+",
+        "disposals": 38,
+        "marks": 27,
+        "tackles": "100+",
+        "disposalEfficiency": 2
+      },
+      "stats": {
+        "fantasyPoints": 1236,
+        "goals": 1,
+        "disposals": 338,
+        "marks": 89,
+        "tackles": 21,
+        "disposalEfficiency": 86.4
+      }
+    },
+    {
+      "name": "Josh Daicos",
+      "team": "Magpies",
+      "position": "DEF",
+      "ratingRank": 86,
+      "ratingPoints": 377.7,
+      "rankings": {
+        "fantasyPoints": 24,
+        "goals": "100+",
+        "disposals": 20,
+        "marks": 31,
+        "tackles": "100+",
+        "disposalEfficiency": 15
+      },
+      "stats": {
+        "fantasyPoints": 1356,
+        "goals": 1,
+        "disposals": 375,
+        "marks": 87,
+        "tackles": 32,
+        "disposalEfficiency": 80
+      }
+    },
+    {
+      "name": "Adam Saad",
+      "team": "Blues",
+      "position": "DEF",
+      "ratingRank": 87,
+      "ratingPoints": 376.6,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 10
+      },
+      "stats": {
+        "fantasyPoints": 147,
+        "goals": 0,
+        "disposals": 43,
+        "marks": 7,
+        "tackles": 4,
+        "disposalEfficiency": 81.4
+      }
+    },
+    {
+      "name": "Dan Houston",
+      "team": "Magpies",
+      "position": "DEF",
+      "ratingRank": 88,
+      "ratingPoints": 375.9,
+      "rankings": {
+        "fantasyPoints": 48,
+        "goals": "100+",
+        "disposals": 51,
+        "marks": 19,
+        "tackles": "100+",
+        "disposalEfficiency": 8
+      },
+      "stats": {
+        "fantasyPoints": 1232,
+        "goals": 1,
+        "disposals": 317,
+        "marks": 94,
+        "tackles": 31,
+        "disposalEfficiency": 81.7
+      }
+    },
+    {
+      "name": "Steele Sidebottom",
+      "team": "Magpies",
+      "position": "MID",
+      "ratingRank": 89,
+      "ratingPoints": 375.3,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 25
+      },
+      "stats": {
+        "fantasyPoints": 752,
+        "goals": 2,
+        "disposals": 193,
+        "marks": 59,
+        "tackles": 22,
+        "disposalEfficiency": 75.6
+      }
+    },
+    {
+      "name": "Cam Rayner",
+      "team": "Lions",
+      "position": "FWD",
+      "ratingRank": 90,
+      "ratingPoints": 374.5,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 74,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 871,
+        "goals": 14,
+        "disposals": 200,
+        "marks": 52,
+        "tackles": 30,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "James Rowbottom",
+      "team": "Swans",
+      "position": "FWD",
+      "ratingRank": 91,
+      "ratingPoints": 374.4,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 3,
+        "disposalEfficiency": 60
+      },
+      "stats": {
+        "fantasyPoints": 989,
+        "goals": 3,
+        "disposals": 217,
+        "marks": 21,
+        "tackles": 92,
+        "disposalEfficiency": 68.2
+      }
+    },
+    {
+      "name": "Josh Ward",
+      "team": "Hawks",
+      "position": "MID",
+      "ratingRank": 92,
+      "ratingPoints": 373.9,
+      "rankings": {
+        "fantasyPoints": 81,
+        "goals": "100+",
+        "disposals": 52,
+        "marks": "100+",
+        "tackles": 64,
+        "disposalEfficiency": 30
+      },
+      "stats": {
+        "fantasyPoints": 1123,
+        "goals": 0,
+        "disposals": 316,
+        "marks": 57,
+        "tackles": 45,
+        "disposalEfficiency": 74.4
+      }
+    },
+    {
+      "name": "Liam Baker",
+      "team": "Eagles",
+      "position": "DEF",
+      "ratingRank": 93,
+      "ratingPoints": 372.2,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 26
+      },
+      "stats": {
+        "fantasyPoints": 775,
+        "goals": 6,
+        "disposals": 225,
+        "marks": 36,
+        "tackles": 31,
+        "disposalEfficiency": 75.1
+      }
+    },
+    {
+      "name": "Jack Buckley",
+      "team": "Giants",
+      "position": "KEYD",
+      "ratingRank": 94,
+      "ratingPoints": 371.9,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 5
+      },
+      "stats": {
+        "fantasyPoints": 396,
+        "goals": 0,
+        "disposals": 100,
+        "marks": 33,
+        "tackles": 12,
+        "disposalEfficiency": 82
+      }
+    },
+    {
+      "name": "Jordan Clark",
+      "team": "Dockers",
+      "position": "DEF",
+      "ratingRank": 95,
+      "ratingPoints": 370.8,
+      "rankings": {
+        "fantasyPoints": 78,
+        "goals": "100+",
+        "disposals": 59,
+        "marks": 91,
+        "tackles": "100+",
+        "disposalEfficiency": 6
+      },
+      "stats": {
+        "fantasyPoints": 1128,
+        "goals": 1,
+        "disposals": 309,
+        "marks": 70,
+        "tackles": 27,
+        "disposalEfficiency": 81.9
+      }
+    },
+    {
+      "name": "Willem Drew",
+      "team": "Power",
+      "position": "MID",
+      "ratingRank": 96,
+      "ratingPoints": 370.2,
+      "rankings": {
+        "fantasyPoints": 72,
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": 6,
+        "disposalEfficiency": 53
+      },
+      "stats": {
+        "fantasyPoints": 1149,
+        "goals": 2,
+        "disposals": 269,
+        "marks": 44,
+        "tackles": 85,
+        "disposalEfficiency": 69.5
+      }
+    },
+    {
+      "name": "Josh Weddle",
+      "team": "Hawks",
+      "position": "DEF",
+      "ratingRank": 97,
+      "ratingPoints": 369.4,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": "100+",
+        "marks": 91,
+        "tackles": "100+",
+        "disposalEfficiency": "100+"
+      },
+      "stats": {
+        "fantasyPoints": 945,
+        "goals": 5,
+        "disposals": 226,
+        "marks": 70,
+        "tackles": 34,
+        "disposalEfficiency": null
+      }
+    },
+    {
+      "name": "Justin McInerney",
+      "team": "Swans",
+      "position": "MID",
+      "ratingRank": 98,
+      "ratingPoints": 368.1,
+      "rankings": {
+        "fantasyPoints": 90,
+        "goals": 74,
+        "disposals": 65,
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 44
+      },
+      "stats": {
+        "fantasyPoints": 1100,
+        "goals": 14,
+        "disposals": 304,
+        "marks": 54,
+        "tackles": 33,
+        "disposalEfficiency": 71.4
+      }
+    },
+    {
+      "name": "Jack Ross",
+      "team": "Tigers",
+      "position": "MID",
+      "ratingRank": 99,
+      "ratingPoints": 367.1,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": "100+",
+        "disposals": 92,
+        "marks": "100+",
+        "tackles": 28,
+        "disposalEfficiency": 34
+      },
+      "stats": {
+        "fantasyPoints": 1059,
+        "goals": 4,
+        "disposals": 277,
+        "marks": 46,
+        "tackles": 63,
+        "disposalEfficiency": 74
+      }
+    },
+    {
+      "name": "Patrick Dangerfield",
+      "team": "Cats",
+      "position": "FWD",
+      "ratingRank": 100,
+      "ratingPoints": 366.6,
+      "rankings": {
+        "fantasyPoints": "100+",
+        "goals": 87,
+        "disposals": "100+",
+        "marks": "100+",
+        "tackles": "100+",
+        "disposalEfficiency": 79
+      },
+      "stats": {
+        "fantasyPoints": 629,
+        "goals": 12,
+        "disposals": 169,
+        "marks": 31,
+        "tackles": 13,
+        "disposalEfficiency": 60.4
+      }
+    }
+  ]
+}
