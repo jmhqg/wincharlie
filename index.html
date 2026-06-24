@@ -318,6 +318,44 @@
   .footer { text-align: center; padding: 20px 0; color: var(--muted); font-size: 0.75rem; }
   .footer a { color: var(--accent); text-decoration: none; }
 
+  .btn-restart {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 12px auto 0;
+    padding: 12px;
+    border-radius: 14px;
+    border: 2px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn-restart:hover {
+    border-color: var(--red);
+    color: var(--red);
+  }
+
+  .all-time-record {
+    text-align: center;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .all-time-record .record-value {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--gold);
+  }
+
   .waiting-label {
     text-align: center;
     padding: 24px;
@@ -408,6 +446,24 @@ const TEAM_ABBR = {
 const NUM_ROUNDS = 6;
 let gameData = null;
 let currentGame = null;
+
+function getAllTimeRecord() {
+  const stored = localStorage.getItem('wincharlie-record');
+  return stored ? parseInt(stored, 10) : null;
+}
+
+function updateAllTimeRecord(score) {
+  const current = getAllTimeRecord();
+  if (current === null || score < current) {
+    localStorage.setItem('wincharlie-record', score);
+    return true;
+  }
+  return false;
+}
+
+function restartGame() {
+  startGame();
+}
 
 // --- Rewarded Ad for Respin ---
 let rewardedAdReady = false;
@@ -691,6 +747,8 @@ function renderGame() {
     } else {
       html += `<div style="text-align:center;font-size:0.75rem;color:var(--muted);margin-top:8px">Respin used</div>`;
     }
+
+    html += `<button class="btn-restart" onclick="restartGame()">Restart</button>`;
   }
 
   // Results history
@@ -722,10 +780,15 @@ function renderGame() {
     else if (total <= 250) { verdict = "DECENT EFFORT"; vColor = "var(--orange)"; }
     else { verdict = "ROUGH DAY"; vColor = "var(--red)"; }
 
+    const isNewRecord = updateAllTimeRecord(total);
+    const record = getAllTimeRecord();
+
     html += `<div class="final-screen">
       <h2 style="color:${vColor}">${verdict}</h2>
       <div class="final-score" style="color:${vColor}">${total}</div>
       <p style="color:var(--muted);font-size:0.85rem">Total AFL Ranking Score</p>
+      ${isNewRecord ? '<p style="color:var(--gold);font-weight:700;margin-top:8px">New all-time record!</p>' : ''}
+      <div class="all-time-record">All-time best: <span class="record-value">${record}</span></div>
       <button class="btn-primary" onclick="startGame()">Play Again</button>
     </div>`;
   }
