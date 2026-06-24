@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T02:05:33.928Z",
+  "lastUpdated": "2026-06-24T22:59:56.661Z",
   "season": 2026,
   "playerCount": 181,
   "players": [
@@ -1018,7 +1018,7 @@
     {
       "name": "Logan Morris",
       "team": "Lions",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 111,
       "ratingPoints": 355,
       "rankings": {
@@ -2352,7 +2352,7 @@
     {
       "name": "Ben Long",
       "team": "Suns",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 120,
       "ratingPoints": 300,
       "rankings": {
@@ -2421,7 +2421,7 @@
     {
       "name": "Brodie Kemp",
       "team": "Blues",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 123,
       "ratingPoints": 300,
       "rankings": {
@@ -2444,7 +2444,7 @@
     {
       "name": "Charlie Cameron",
       "team": "Lions",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 124,
       "ratingPoints": 300,
       "rankings": {
@@ -2582,7 +2582,7 @@
     {
       "name": "Corey Durdin",
       "team": "Power",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 130,
       "ratingPoints": 300,
       "rankings": {
@@ -2766,7 +2766,7 @@
     {
       "name": "Harvey Langford",
       "team": "Demons",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 138,
       "ratingPoints": 300,
       "rankings": {
@@ -2881,7 +2881,7 @@
     {
       "name": "Isaiah Dudley",
       "team": "Dockers",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 143,
       "ratingPoints": 300,
       "rankings": {
@@ -2950,7 +2950,7 @@
     {
       "name": "Jack Higgins",
       "team": "Saints",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 146,
       "ratingPoints": 300,
       "rankings": {
@@ -3065,7 +3065,7 @@
     {
       "name": "Jake Stringer",
       "team": "Giants",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 151,
       "ratingPoints": 300,
       "rankings": {
@@ -3272,7 +3272,7 @@
     {
       "name": "Josh Rachele",
       "team": "Crows",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 160,
       "ratingPoints": 300,
       "rankings": {
@@ -3318,7 +3318,7 @@
     {
       "name": "Kai Lohmann",
       "team": "Lions",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 162,
       "ratingPoints": 300,
       "rankings": {
@@ -3479,7 +3479,7 @@
     {
       "name": "Liam Ryan",
       "team": "Saints",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 169,
       "ratingPoints": 300,
       "rankings": {
@@ -3640,7 +3640,7 @@
     {
       "name": "Mitch McGovern",
       "team": "Blues",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 176,
       "ratingPoints": 300,
       "rankings": {
@@ -3709,7 +3709,7 @@
     {
       "name": "Nate Caddy",
       "team": "Bombers",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 179,
       "ratingPoints": 300,
       "rankings": {
@@ -3824,7 +3824,7 @@
     {
       "name": "Oliver Henry",
       "team": "Cats",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 184,
       "ratingPoints": 300,
       "rankings": {
@@ -3847,7 +3847,7 @@
     {
       "name": "Patrick Voss",
       "team": "Dockers",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 185,
       "ratingPoints": 300,
       "rankings": {
@@ -3870,7 +3870,7 @@
     {
       "name": "Paul Curtis",
       "team": "Kangaroos",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 186,
       "ratingPoints": 300,
       "rankings": {
@@ -3893,7 +3893,7 @@
     {
       "name": "Phoenix Gothard",
       "team": "Giants",
-      "position": "KEYF",
+      "position": "FWD",
       "ratingRank": 187,
       "ratingPoints": 300,
       "rankings": {
