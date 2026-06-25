@@ -789,12 +789,10 @@ function renderGame() {
     html += `</div>`;
   }
 
-  const promoHtml = `<a href="https://worldcup-0.com" class="promo-box green">
+  const promoHtml = `<a href="https://worldcup-0.com" target="_blank" class="promo-box green">
     <div class="promo-title">Try <span>WorldCup-0</span></div>
-    <div class="promo-sub">the world cup version</div>
-  </a><a href="https://winballon.com" class="promo-box">
+  </a><a href="https://winballon.com" target="_blank" class="promo-box">
     <div class="promo-title">Try <span>WinBallon</span></div>
-    <div class="promo-sub">the soccer version</div>
   </a>`;
 
   if (!g.finished && g.scores.length > 0) {
