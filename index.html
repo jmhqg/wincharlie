@@ -334,6 +334,7 @@
   .promo-box:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
   .promo-box .promo-title { font-size: 0.95rem; font-weight: 700; color: var(--text); }
   .promo-box .promo-title span { color: #c9a84c; }
+  .promo-box.green .promo-title span { color: #15803d; }
   .promo-box .promo-sub { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
 
   .btn-restart {
@@ -788,7 +789,10 @@ function renderGame() {
     html += `</div>`;
   }
 
-  const promoHtml = `<a href="https://winballon.com" class="promo-box">
+  const promoHtml = `<a href="https://worldcup-0.com" class="promo-box green">
+    <div class="promo-title">Try <span>WorldCup-0</span></div>
+    <div class="promo-sub">the world cup version</div>
+  </a><a href="https://winballon.com" class="promo-box">
     <div class="promo-title">Try <span>WinBallon</span></div>
     <div class="promo-sub">the soccer version</div>
   </a>`;
