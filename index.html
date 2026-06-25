@@ -318,6 +318,24 @@
   .footer { text-align: center; padding: 20px 0; color: var(--muted); font-size: 0.75rem; }
   .footer a { color: var(--accent); text-decoration: none; }
 
+  .promo-box {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 16px auto 0;
+    padding: 14px;
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .promo-box:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+  .promo-box .promo-title { font-size: 0.95rem; font-weight: 700; color: var(--text); }
+  .promo-box .promo-title span { color: #c9a84c; }
+  .promo-box .promo-sub { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
+
   .btn-restart {
     display: block;
     width: 100%;
@@ -412,7 +430,6 @@
 
   <div class="footer">
     Data from <a href="https://www.footywire.com" target="_blank">footywire.com</a> - Updated weekly
-    <br>Try <a href="https://winballon.com">WinBallon</a> - the football version
   </div>
 </div>
 
@@ -771,6 +788,15 @@ function renderGame() {
     html += `</div>`;
   }
 
+  const promoHtml = `<a href="https://winballon.com" class="promo-box">
+    <div class="promo-title">Try <span>WinBallon</span></div>
+    <div class="promo-sub">the soccer version</div>
+  </a>`;
+
+  if (!g.finished && g.scores.length > 0) {
+    html += promoHtml;
+  }
+
   // Final screen
   if (g.finished) {
     let verdict, vColor;
@@ -792,6 +818,7 @@ function renderGame() {
       <div class="all-time-record">All-time best: <span class="record-value">${record}</span></div>
       <button class="btn-primary" onclick="startGame()">Play Again</button>
     </div>`;
+    html += promoHtml;
   }
 
   document.getElementById("app").innerHTML = html;
