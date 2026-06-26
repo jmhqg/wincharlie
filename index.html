@@ -422,7 +422,7 @@
 <div class="container">
   <header>
     <h1>WinCharlie</h1>
-    <p>Can you score under 150 to build the complete 2026 Brownlow Medal winner?</p>
+    <p>Can you score under 100 to build the complete 2026 Brownlow Medal winner?</p>
   </header>
 
   <div id="app">
@@ -708,14 +708,14 @@ function renderGame() {
   html += `<div class="score-bar">
     <div class="score-section">
       <div class="score-label">Score</div>
-      <div class="score-value ${total < 75 ? 'good' : total < 150 ? 'ok' : 'bad'}">${total}</div>
+      <div class="score-value ${total < 50 ? 'good' : total < 100 ? 'ok' : 'bad'}">${total}</div>
     </div>
     <div class="progress-dots">
       ${g.players.map((_, i) => `<div class="dot ${i < g.currentRound ? 'done' : ''} ${i === g.currentRound && !g.finished ? 'active' : ''}"></div>`).join('')}
     </div>
     <div class="score-section">
       <div class="score-label">Target</div>
-      <div class="score-value" style="color:var(--accent)">&lt;150</div>
+      <div class="score-value" style="color:var(--accent)">&lt;100</div>
     </div>
   </div>`;
 
@@ -802,11 +802,11 @@ function renderGame() {
   // Final screen
   if (g.finished) {
     let verdict, vColor;
-    if (total <= 30) { verdict = "LEGENDARY"; vColor = "var(--gold)"; }
-    else if (total <= 75) { verdict = "BRILLIANT"; vColor = "var(--green)"; }
-    else if (total <= 100) { verdict = "GREAT"; vColor = "var(--green)"; }
-    else if (total <= 150) { verdict = "SOLID"; vColor = "var(--accent)"; }
-    else if (total <= 250) { verdict = "DECENT EFFORT"; vColor = "var(--orange)"; }
+    if (total <= 20) { verdict = "LEGENDARY"; vColor = "var(--gold)"; }
+    else if (total <= 50) { verdict = "BRILLIANT"; vColor = "var(--green)"; }
+    else if (total <= 75) { verdict = 'GREAT<br><span style="font-size:0.55em;font-weight:400;text-transform:lowercase">now get 50</span>'; vColor = "var(--green)"; }
+    else if (total <= 100) { verdict = 'GREAT<br><span style="font-size:0.55em;font-weight:400;text-transform:lowercase">now get 50</span>'; vColor = "var(--accent)"; }
+    else if (total <= 175) { verdict = "DECENT EFFORT"; vColor = "var(--orange)"; }
     else { verdict = "ROUGH DAY"; vColor = "var(--red)"; }
 
     const isNewRecord = updateAllTimeRecord(total);
@@ -844,7 +844,7 @@ function showStartScreen() {
         <li>Your score = the player's <strong>league-wide ranking</strong> in that stat</li>
         <li>Lower is better! #1 in goals = just 1 point</li>
         <li><strong>100+</strong> = outside the top 100 for that stat (adds 100)</li>
-        <li>Total all 6. <strong>Aim for under 150!</strong></li>
+        <li>Total all 6. <strong>Aim for under 100!</strong></li>
       </ol>
     </div>
     <button class="btn-primary" onclick="startGame()">Start Game</button>
